@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if (Auth::id()) {
+        return Redirect::to('pages');
+    } else {
+        return Redirect::to('login');
+    }
 });
 
 Auth::routes();
