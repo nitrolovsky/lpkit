@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Request;
 use Redirect;
+use Mailchimp;
 
 use App\Lead;
 
@@ -57,6 +58,16 @@ class LeadController extends Controller
             'status' => Request::get('status')
         ])->id;
         $lead = Lead::find($lead_last_id);
+
+        if(isset($lead->page->mailchimp_id) and isset($lead->page->mailchimp_list_id)) {
+            $mailchimp = new Mailchimp($lead->page->mailchimp_id);
+            $mailchimp_list_id = $lead->page->mailchimp_id;
+
+            $mailchimp->lists->subscribe(
+                $mailchimp_list_id,
+                ["email" => Request::get("email")]
+            );
+        }
 
         if (isset($lead->page->lead_magnet_file)) {
             return Redirect::to('/files/' . $lead->page->id . '/' . $lead->page->lead_magnet_file);
