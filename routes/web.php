@@ -20,6 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::post('pages/updateajax', 'PageController@updateajax');
+Route::post('pages/updateajaximage', 'PageController@updateajaximage');
 Route::resource('pages', 'PageController');
 
 Route::resource('leads', 'LeadController');

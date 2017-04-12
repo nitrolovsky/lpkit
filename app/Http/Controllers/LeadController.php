@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Request;
+use Redirect;
+
+use App\Lead;
 
 class LeadController extends Controller
 {
@@ -34,7 +37,25 @@ class LeadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $lead = new Lead;
+
+        $lead_last_id = $lead->create([
+            'page_id' => Request::get('page_id'),
+            'source' => Request::server("HTTP_REFERER"),
+            'name' => Request::get('name'),
+            'email' => Request::get('email'),
+            'phone' => Request::get('phone'),
+            'address' => Request::get('address'),
+            'size' => Request::get('size'),
+            'color' => Request::get('color'),
+            'paided' => Request::get('paided'),
+            'status' => Request::get('status'),
+            'comment' => Request::get('comment'),
+            'fio' => Request::get('fio')
+        ])->id;
+        $lead = Lead::find($lead_last_id);
+
+        return Redirect::to($lead->page->redirect);
     }
 
     /**

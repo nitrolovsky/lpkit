@@ -45,4 +45,8 @@ class Page extends Model
         'mailchimp_id',
         'mailchimp_list_id'
     ];
+    public function leads()
+    {
+        return $this->hasMany('App\Lead');
+    }
 }
