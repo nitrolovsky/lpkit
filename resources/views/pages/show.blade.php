@@ -50,6 +50,7 @@
                             </div>
                             <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
                             <a href="mailto:{{ $page->email }}" class="text-info a">{{ $page->email }}</a><br>
+                            {{ $page->address }}
                         </div>
                     </div>
                     <div class="row pt-5">
@@ -113,6 +114,7 @@
                             </div>
                             <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
                             <a href="mailto:{{ $page->email }}" class="text-info a">{{ $page->email }}</a><br>
+                            {{ $page->address }}
                         </div>
                     </div>
                 </div>
