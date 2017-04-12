@@ -42,20 +42,27 @@ class LeadController extends Controller
         $lead_last_id = $lead->create([
             'page_id' => Request::get('page_id'),
             'source' => Request::server("HTTP_REFERER"),
+
             'name' => Request::get('name'),
             'email' => Request::get('email'),
             'phone' => Request::get('phone'),
+
             'address' => Request::get('address'),
             'size' => Request::get('size'),
             'color' => Request::get('color'),
-            'paided' => Request::get('paided'),
-            'status' => Request::get('status'),
             'comment' => Request::get('comment'),
-            'fio' => Request::get('fio')
+            'fio' => Request::get('fio'),
+
+            'paided' => Request::get('paided'),
+            'status' => Request::get('status')
         ])->id;
         $lead = Lead::find($lead_last_id);
 
-        return Redirect::to($lead->page->redirect);
+        if (isset($lead->page->lead_magnet_file)) {
+            return Redirect::to('/files/' . $lead->page->id . '/' . $lead->page->lead_magnet_file);
+        } elseif (isset($lead->page->redirect)) {
+            return Redirect::to($lead->page->redirect);
+        }
     }
 
     /**

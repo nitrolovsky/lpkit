@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::post('pages/updateajax', 'PageController@updateajax');
 Route::post('pages/updateajaximage', 'PageController@updateajaximage');
+Route::post('pages/updateajaxfile', 'PageController@updateajaxfile');
 Route::resource('pages', 'PageController');
 
 Route::resource('leads', 'LeadController');

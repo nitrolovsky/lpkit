@@ -64,6 +64,27 @@ $(document).ready(function() {
          });
     });
 
+    $("#lead_magnet_file").change(function(){
+        var file_data = $('#lead_magnet_file').prop('files')[0];
+        var form_data = new FormData();
+        var idV = $('input[name="id"]').val();
+        form_data.append('lead_magnet_file', file_data);
+        form_data.append('id', idV);
+
+        $.ajax({
+            url: '/pages/updateajaxfile',
+            dataType: 'text',
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: form_data,
+            type: 'post',
+            success: function(data){
+
+            }
+         });
+    });
+
     $("#video").on("input", function(){
         var valueAttr = $(this).val();
         valueAttr = valueAttr + "?rel=0&showinfo=0";

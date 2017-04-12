@@ -18,18 +18,6 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="subdomain" class="col-xl-3 col-md-3 col-12 col-form-label">
-                    Субдомен
-                </label>
-                <div class="col-xl-9 col-md-9 col-12">
-                    <input type="text" class="form-control" id="subdomain" placeholder="subdomain" name="subdomain" value="{{ $page->subdomain }}">
-                </div>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="form-group row">
                 <label for="company_name" class="col-xl-3 col-form-label">
                     Имя компании
                 </label>
@@ -157,6 +145,33 @@
             <br>
 
             <div class="form-group row">
+                <label for="lead_magnet_file" class="col-xl-3 col-form-label">
+                    Файл лид-магнит
+                </label>
+                <div class="col-xl-6">
+                    <label class="custom-file">
+                        <input type="file" id="lead_magnet_file" class="custom-file-input" name="lead_magnet_file">
+                        <span class="custom-file-control"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="subdomain" class="col-xl-3 col-md-3 col-12 col-form-label">
+                    Субдомен
+                </label>
+                <div class="col-xl-9 col-md-9 col-12">
+                    <input type="text" class="form-control" id="subdomain" placeholder="subdomain" name="subdomain" value="{{ $page->subdomain }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="title" class="col-xl-3 col-form-label">
+                    Title
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="title" placeholder="Кроссовки оптом" name="title" value="{{ $page->title }}">
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="redirect" class="col-xl-3 col-form-label">
                     Адрес следующего сайта
                 </label>
@@ -167,7 +182,7 @@
 
             <div class="form-group row">
                 <div class="offset-xl-3 col-xl-9">
-                    <button type="submit" class="btn btn-primary" role="button">Создать страницу</button>
+                    <button type="submit" class="btn btn-primary" role="button">Сохранить</button>
                 </div>
             </div>
         </form>

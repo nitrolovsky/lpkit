@@ -8,9 +8,6 @@ class Page extends Model
 {
     protected $fillable = [
         'user_id',
-        'project_id',
-
-        'subdomain',
 
         'company_name',
         'description',
@@ -33,13 +30,16 @@ class Page extends Model
         'background_image',
         'legal_information',
 
+        'lead_magnet_file',
+        'subdomain',
         'title',
         'redirect',
-        'lead_magnet_file',
 
         'comments_enabled',
+
         'google',
         'yandex',
+        
         'letter_id',
         'letter',
         'mailchimp_id',

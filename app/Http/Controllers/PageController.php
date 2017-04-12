@@ -20,7 +20,12 @@ class PageController extends Controller
      */
     public function index()
     {
-        return view('pages.index');
+        $pages = Page::where('user_id', Auth::id())
+            ->orderBy('id', 'desc')
+            ->get();
+
+        return View('pages.index')
+            ->with('pages', $pages);
     }
 
     /**
@@ -87,7 +92,7 @@ class PageController extends Controller
         $page = Page::find($id);
 
         $page->update([
-            'subdomain' => Request::get('subdomain'),
+            'user_id' => Auth::id(),
 
             'company_name' => Request::get('company_name'),
             'description' => Request::get('description'),
@@ -104,10 +109,10 @@ class PageController extends Controller
 
             'legal_information' => Request::get('legal_information'),
 
+            'lead_magnet_file' => Request::get('lead_magnet_file'),
+            'subdomain' => Request::get('subdomain'),
             'title' => Request::get('title'),
-
-            'user_id' => Auth::id(),
-            'project_id' => Session::get('project_id')
+            'redirect' => Request::get('redirect')
         ]);
 
         if (Request::hasFile('background_image')) {
@@ -118,6 +123,19 @@ class PageController extends Controller
 
             $page->update([
                 'background_image' => $file_name
+            ]);
+        }
+
+        if (Request::hasFile('lead_magnet_file')) {
+            $extension = Request::file('lead_magnet_file')->getClientOriginalExtension();
+
+            $upload_path = public_path('files\\' . $page->id);
+            //$file_name = $now->format('Y-m-d-H-i-s') . '.' . $extension;
+            $file_name = 'Document.' . $extension;
+            Request::file('lead_magnet_file')->move($upload_path, $file_name);
+
+            $page->update([
+                'lead_magnet_file' => $file_name
             ]);
         }
 
@@ -160,6 +178,25 @@ class PageController extends Controller
 
             $page->update([
                 'background_image' => $file_name
+            ]);
+        }
+    }
+
+    public function updateajaxfile(Request $request) {
+        if (Request::hasFile('lead_magnet_file')) {
+            $page = Page::find(Request::get('id'));
+
+            $now = new DateTime();
+            $extension = Request::file('lead_magnet_file')->getClientOriginalExtension();
+
+            $upload_path = public_path('files\\' . $page->id);
+            //$file_name = $now->format('Y-m-d-H-i-s') . '.' . $extension;
+            $file_name = 'Document.' . $extension;
+            Request::file('lead_magnet_file')->move($upload_path, $file_name);
+
+
+            $page->update([
+                'lead_magnet_file' => $file_name
             ]);
         }
     }

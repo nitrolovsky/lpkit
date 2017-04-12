@@ -9,16 +9,19 @@ class Lead extends Model
     protected $fillable = [
         'page_id',
         'source',
+
         'name',
         'email',
         'phone',
+
         'address',
         'size',
         'color',
-        'paided',
-        'status',
         'comment',
-        'fio'
+        'fio',
+
+        'paided',
+        'status'
     ];
     protected $guarded = ['id'];
 
