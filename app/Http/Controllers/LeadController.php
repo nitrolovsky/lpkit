@@ -59,9 +59,9 @@ class LeadController extends Controller
         ])->id;
         $lead = Lead::find($lead_last_id);
 
-        if(isset($lead->page->mailchimp_id) and isset($lead->page->mailchimp_list_id)) {
-            $mailchimp = new Mailchimp($lead->page->mailchimp_id);
-            $mailchimp_list_id = $lead->page->mailchimp_id;
+        if(isset($lead->page->mailchimp_api_key) and isset($lead->page->mailchimp_list_id)) {
+            $mailchimp = new Mailchimp($lead->page->mailchimp_api_key);
+            $mailchimp_list_id = $lead->page->mailchimp_list_id;
 
             $mailchimp->lists->subscribe(
                 $mailchimp_list_id,

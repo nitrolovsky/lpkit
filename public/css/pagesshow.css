@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700,800,900&subset=cyrillic');
 
-body {
-    background-color: black !important;
-}
-
 .a, .a:hover, .a:active, .a:visited {
     text-decoration:none !important;
 }

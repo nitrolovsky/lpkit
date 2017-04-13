@@ -40,19 +40,38 @@ class CreatePagesTable extends Migration
             $table->string('background_image')->nullable();
             $table->text('legal_information')->nullable();
 
+            $table->string('case_enabled')->nullable();
+            $table->string('case_title')->nullable();
+            $table->string('case_video_1')->nullable();
+            $table->text('case_text_1')->nullable();
+            $table->string('case_video_2')->nullable();
+            $table->text('case_text_2')->nullable();
+            $table->string('case_video_3')->nullable();
+            $table->text('case_text_3')->nullable();
+            $table->string('case_video_4')->nullable();
+            $table->text('case_text_4')->nullable();
+            $table->string('case_video_5')->nullable();
+            $table->text('case_text_5')->nullable();
+            $table->string('case_video_6')->nullable();
+            $table->text('case_text_6')->nullable();
+            $table->string('case_video_7')->nullable();
+            $table->text('case_text_7')->nullable();
+            $table->string('case_video_8')->nullable();
+            $table->text('case_text_8')->nullable();
+            $table->string('case_video_9')->nullable();
+            $table->text('case_text_9')->nullable();
+
+            $table->string('comments_enabled')->nullable();
+
             $table->string('lead_magnet_file')->nullable();
             $table->string('subdomain')->nullable();
             $table->string('title')->nullable();
             $table->string('redirect')->nullable();
 
-            $table->string('comments_enabled')->nullable();
-
             $table->text('google')->nullable();
             $table->text('yandex')->nullable();
 
-            $table->string('letter_id')->nullable();
-            $table->text('letter')->nullable();
-            $table->string('mailchimp_id')->nullable();
+            $table->string('mailchimp_api_key')->nullable();
             $table->string('mailchimp_list_id')->nullable();
         });
     }

@@ -30,19 +30,38 @@ class Page extends Model
         'background_image',
         'legal_information',
 
+        'case_enabled',
+        'case_title',
+        'case_video_1',
+        'case_text_1',
+        'case_video_2',
+        'case_text_2',
+        'case_video_3',
+        'case_text_3',
+        'case_video_4',
+        'case_text_4',
+        'case_video_5',
+        'case_text_5',
+        'case_video_6',
+        'case_text_6',
+        'case_video_7',
+        'case_text_7',
+        'case_video_8',
+        'case_text_8',
+        'case_video_9',
+        'case_text_9',
+
+        'comments_enabled',
+
         'lead_magnet_file',
         'subdomain',
         'title',
         'redirect',
 
-        'comments_enabled',
-
         'google',
         'yandex',
-        
-        'letter_id',
-        'letter',
-        'mailchimp_id',
+
+        'mailchimp_api_key',
         'mailchimp_list_id'
     ];
     public function leads()

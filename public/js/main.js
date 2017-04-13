@@ -13,6 +13,7 @@ $(document).ready(function() {
             url: "/pages/updateajax",
             data: {id: idV, namei: nameAttr, valuei: valueAttr },
             success: function(res) {
+
             }
         });
     });
@@ -25,10 +26,43 @@ $(document).ready(function() {
             url: "/pages/updateajax",
             data: {id: idV, namei: nameAttr, valuei: valueAttr },
             success: function(res) {
+
+            }
+        });
+    });
+    $("textarea").on("input", function () {
+        var idV = $('input[name="id"]').val();
+        var valueAttr = $(this).val();
+        var nameAttr = $(this).attr("name");
+        $.ajax({
+            type: "POST",
+            url: "/pages/updateajax",
+            data: {id: idV, namei: nameAttr, valuei: valueAttr },
+            success: function(res) {
+
+            }
+        });
+    });
+
+    $('input[type="checkbox"]').on("change", function () {
+        var idV = $('input[name="id"]').val();
+        if ($(this).is(':checked')) {
+            var valueAttr = $(this).val();
+        } else {
+            var valueAttr = '';
+        }
+
+        var nameAttr = $(this).attr("name");
+        $.ajax({
+            type: "POST",
+            url: "/pages/updateajax",
+            data: {id: idV, namei: nameAttr, valuei: valueAttr },
+            success: function(res) {
                 console.log(res);
             }
         });
     });
+
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();

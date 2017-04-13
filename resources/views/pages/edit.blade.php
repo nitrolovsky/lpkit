@@ -145,6 +145,189 @@
             <br>
 
             <div class="form-group row">
+                <label for="case_enabled" class="col-xl-3">
+                    Примеры работ (Кейсы)
+                </label>
+                <div class="col-xl-9">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="case_enabled"> Включить блок примеров работ
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_title" class="col-xl-3 col-form-label">
+                    Заголовок блока с кейсами
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_title" placeholder="Посмотрите примеры наших работ" name="case_title" value="{{ $page->case_title }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_video_1" class="col-xl-3 col-form-label">
+                    Ссылка на youtube видео кейс 1
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_video_1" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_1" value="{{ $page->case_video_1 }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_text_1" class="col-xl-3 col-form-label">
+                    Описание к видео кейсу 1
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="case_text_1" rows="3" name="case_text_1" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_1 }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_video_2" class="col-xl-3 col-form-label">
+                    Ссылка на youtube видео кейс 2
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_video_2" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_2" value="{{ $page->case_video_2 }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_text_2" class="col-xl-3 col-form-label">
+                    Описание к видео кейсу 2
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="case_text_2" rows="3" name="case_text_2" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_2 }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_video_3" class="col-xl-3 col-form-label">
+                    Ссылка на youtube видео кейс 3
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_video_3" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_3" value="{{ $page->case_video_3 }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_text_3" class="col-xl-3 col-form-label">
+                    Описание к видео кейсу 3
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="case_text_3" rows="3" name="case_text_3" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_3 }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_video_4" class="col-xl-3 col-form-label">
+                    Ссылка на youtube видео кейс 4
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_video_4" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_4" value="{{ $page->case_video_4 }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_text_4" class="col-xl-3 col-form-label">
+                    Описание к видео кейсу 4
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="case_text_4" rows="3" name="case_text_4" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_4 }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_video_5" class="col-xl-3 col-form-label">
+                    Ссылка на youtube видео кейс 5
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_video_5" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_5" value="{{ $page->case_video_5 }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_text_5" class="col-xl-3 col-form-label">
+                    Описание к видео кейсу 5
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="case_text_5" rows="3" name="case_text_5" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_5 }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_video_6" class="col-xl-3 col-form-label">
+                    Ссылка на youtube видео кейс 6
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_video_6" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_6" value="{{ $page->case_video_6 }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_text_6" class="col-xl-3 col-form-label">
+                    Описание к видео кейсу 6
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="case_text_6" rows="3" name="case_text_6" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_6 }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_video_7" class="col-xl-3 col-form-label">
+                    Ссылка на youtube видео кейс 7
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_video_7" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_7" value="{{ $page->case_video_7 }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_text_7" class="col-xl-3 col-form-label">
+                    Описание к видео кейсу 7
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="case_text_7" rows="3" name="case_text_7" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_7 }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_video_8" class="col-xl-3 col-form-label">
+                    Ссылка на youtube видео кейс 8
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_video_8" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_8" value="{{ $page->case_video_8 }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_text_8" class="col-xl-3 col-form-label">
+                    Описание к видео кейсу 8
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="case_text_8" rows="3" name="case_text_8" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_8 }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_video_9" class="col-xl-3 col-form-label">
+                    Ссылка на youtube видео кейс 9
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="case_video_9" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_9" value="{{ $page->case_video_9 }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="case_text_9" class="col-xl-3 col-form-label">
+                    Описание к видео кейсу 9
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="case_text_9" rows="3" name="case_text_9" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_9 }}</textarea>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group row">
+                <label for="comments_enabled" class="col-xl-3">
+                    Комментирование
+                </label>
+                <div class="col-xl-9">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="comments_enabled"> Включить блок комментариев Cackle
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="form-group row">
                 <label for="lead_magnet_file" class="col-xl-3 col-form-label">
                     Файл лид-магнит
                 </label>
@@ -177,6 +360,26 @@
                 </label>
                 <div class="col-xl-9">
                     <input type="text" class="form-control" id="redirect" placeholder="http://krossovkioptprice.nejron.com" name="redirect" value="{{ $page->redirect }}">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="form-group row">
+                <label for="mailchimp_id" class="col-xl-3 col-form-label">
+                    Mailchimp api key
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="mailchimp_id" placeholder="aeb1391031954768639c82b75a9fdc30-us11" name="mailchimp_id" value="{{ $page->mailchimp_id }}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="mailchimp_list_id" class="col-xl-3 col-form-label">
+                    Mailchimp list id
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="mailchimp_list_id" placeholder="f315a1ed5c" name="mailchimp_list_id" value="{{ $page->mailchimp_list_id }}">
                 </div>
             </div>
 

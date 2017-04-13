@@ -109,10 +109,36 @@ class PageController extends Controller
 
             'legal_information' => Request::get('legal_information'),
 
+            'case_enabled' => Request::get('case_enabled'),
+            'case_title' => Request::get('case_title'),
+            'case_video_1' => Request::get('case_video_1'),
+            'case_text_1' => Request::get('case_text_1'),
+            'case_video_2' => Request::get('case_video_2'),
+            'case_text_2' => Request::get('case_text_2'),
+            'case_video_3' => Request::get('case_video_3'),
+            'case_text_3' => Request::get('case_text_3'),
+            'case_video_4' => Request::get('case_video_4'),
+            'case_text_4' => Request::get('case_text_4'),
+            'case_video_5' => Request::get('case_video_5'),
+            'case_text_5' => Request::get('case_text_5'),
+            'case_video_6' => Request::get('case_video_6'),
+            'case_text_6' => Request::get('case_text_6'),
+            'case_video_7' => Request::get('case_video_7'),
+            'case_text_7' => Request::get('case_text_7'),
+            'case_video_8' => Request::get('case_video_8'),
+            'case_text_8' => Request::get('case_text_8'),
+            'case_video_9' => Request::get('case_video_9'),
+            'case_text_9' => Request::get('case_text_9'),
+
+            'comments_enabled' => Request::get('comments_enabled'),
+
             'lead_magnet_file' => Request::get('lead_magnet_file'),
             'subdomain' => Request::get('subdomain'),
             'title' => Request::get('title'),
-            'redirect' => Request::get('redirect')
+            'redirect' => Request::get('redirect'),
+
+            'mailchimp_api_key' => Request::get('mailchimp_api_key'),
+            'mailchimp_list_id' => Request::get('mailchimp_list_id')
         ]);
 
         if (Request::hasFile('background_image')) {

@@ -21,6 +21,9 @@
                 height: 100%;
                 min-height: 100%;
             }
+            body {
+                background-color: white !important;
+            }
         </style>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -104,22 +107,131 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row pt-5 pb-4">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
-                             {{ $page->legal_information }}
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
-                            <div class="hidden-md-up">
-                                <br>
+                    @if (empty($page->case_enabled) and empty($page->comments_enabled))
+                        <div class="row pt-5 pb-4">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
+                                 {{ $page->legal_information }}
                             </div>
-                            <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
-                            <a href="mailto:{{ $page->email }}" class="text-info a">{{ $page->email }}</a><br>
-                            {{ $page->address }}
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-right text-lg-right text-md-right text-sm-center text-center">
+                                <div class="hidden-md-up">
+                                    <br>
+                                </div>
+                                <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
+                                <a href="mailto:{{ $page->email }}" class="text-info a">{{ $page->email }}</a><br>
+                                {{ $page->address }}
+                            </div>
+                        </div>
+                    @endif
+                </div>
+            </div>
+        </div>
+        @if (isset($page->case_enabled))
+            <div class="container">
+                <div class="h1 py-5 text-center font">
+                    {{ $page->case_title }}
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="embed-responsive embed-responsive-16by9 sw" id="case_video_1">
+                            <iframe class="embed-responsive-item" src="{{ $page->case_video_1 }}?rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="font py-4">
+                            @php echo html_entity_decode($page->case_text_1); @endphp
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="embed-responsive embed-responsive-16by9 sw" id="case_video_2">
+                            <iframe class="embed-responsive-item" src="{{ $page->case_video_2 }}?rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="font py-4">
+                            @php echo html_entity_decode($page->case_text_2); @endphp
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="embed-responsive embed-responsive-16by9 sw" id="case_video_3">
+                            <iframe class="embed-responsive-item" src="{{ $page->case_video_3 }}?rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="font py-4">
+                            @php echo html_entity_decode($page->case_text_3); @endphp
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="embed-responsive embed-responsive-16by9 sw" id="case_video_4">
+                            <iframe class="embed-responsive-item" src="{{ $page->case_video_4 }}?rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="font py-4">
+                            @php echo html_entity_decode($page->case_text_4); @endphp
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="embed-responsive embed-responsive-16by9 sw" id="case_video_5">
+                            <iframe class="embed-responsive-item" src="{{ $page->case_video_5 }}?rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="font py-4">
+                            @php echo html_entity_decode($page->case_text_5); @endphp
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="embed-responsive embed-responsive-16by9 sw" id="case_video_6">
+                            <iframe class="embed-responsive-item" src="{{ $page->case_video_6 }}?rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="font py-4">
+                            @php echo html_entity_decode($page->case_text_6); @endphp
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="embed-responsive embed-responsive-16by9 sw" id="case_video_7">
+                            <iframe class="embed-responsive-item" src="{{ $page->case_video_7 }}?rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="font py-4">
+                            @php echo html_entity_decode($page->case_text_7); @endphp
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="embed-responsive embed-responsive-16by9 sw" id="case_video_8">
+                            <iframe class="embed-responsive-item" src="{{ $page->case_video_8 }}?rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="font py-4">
+                            @php echo html_entity_decode($page->case_text_8); @endphp
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="embed-responsive embed-responsive-16by9 sw" id="case_video_9">
+                            <iframe class="embed-responsive-item" src="{{ $page->case_video_9 }}?rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="font py-4">
+                            @php echo html_entity_decode($page->case_text_9); @endphp
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        @endif
+        @if ($page->comments_enabled)
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-10 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
+                        <div class="pt-3" id="mc-container"></div>
+                        <br>
+                        <script type="text/javascript">
+                            cackle_widget = window.cackle_widget || [];
+                            cackle_widget.push({widget: 'Comment', id: 49982});
+                            (function() {
+                                var mc = document.createElement('script');
+                                mc.type = 'text/javascript';
+                                mc.async = true;
+                                mc.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cackle.me/widget.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+                            })();
+                        </script>
+                    </div>
+                </div>
+            </div>
+        @endif
+
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
