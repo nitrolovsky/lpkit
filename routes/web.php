@@ -12,6 +12,14 @@
 */
 
 Route::get('/', function () {
+    $env = explode(".", Request::server("HTTP_HOST"));
+    $subdomain = array_shift($env);
+    $page = App\Page::where('subdomain', $subdomain)->first();
+    if ($page) {
+        return view('pages.show')
+            ->with('page', $page);
+    }
+
     if (Auth::id()) {
         return Redirect::to('pages');
     } else {
