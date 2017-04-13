@@ -178,7 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Collective\Html\HtmlServiceProvider::class,
-
+        Skovmand\Mailchimp\MailchimpServiceProvider::class,
     ],
 
     /*
