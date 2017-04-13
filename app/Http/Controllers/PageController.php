@@ -211,7 +211,6 @@ class PageController extends Controller
             $file_name = 'bg.' . $extension;
             Request::file('background_image')->move($upload_path, $file_name);
 
-
             $page->update([
                 'background_image' => $file_name
             ]);
