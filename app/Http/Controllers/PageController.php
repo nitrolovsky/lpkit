@@ -206,7 +206,7 @@ class PageController extends Controller
             $now = new DateTime();
             $extension = Request::file('background_image')->getClientOriginalExtension();
 
-            $upload_path = public_path('files\\' . $page->id);
+            $upload_path = public_path('files/' . $page->id);
             //$file_name = $now->format('Y-m-d-H-i-s') . '.' . $extension;
             $file_name = 'bg.' . $extension;
             Request::file('background_image')->move($upload_path, $file_name);
@@ -228,7 +228,6 @@ class PageController extends Controller
             //$file_name = $now->format('Y-m-d-H-i-s') . '.' . $extension;
             $file_name = 'Document.' . $extension;
             Request::file('lead_magnet_file')->move($upload_path, $file_name);
-
 
             $page->update([
                 'lead_magnet_file' => $file_name
