@@ -26,6 +26,7 @@ class Page extends Model
         'email_form_enabled',
         'phone_form_enabled',
         'comment_form_enabled',
+        'money_button',
 
         'background_image',
         'legal_information',
@@ -60,6 +61,7 @@ class Page extends Model
 
         'google',
         'yandex',
+        'yandex_target_button',
 
         'mailchimp_api_key',
         'mailchimp_list_id'

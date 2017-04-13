@@ -107,6 +107,12 @@ class PageController extends Controller
             'lead_magnet' => Request::get('lead_magnet'),
             'call_to_action' => Request::get('call_to_action'),
 
+            'name_form_enabled' => Request::get('name_form_enabled'),
+            'email_form_enabled' => Request::get('email_form_enabled'),
+            'phone_form_enabled' => Request::get('phone_form_enabled'),
+            'comment_form_enabled' => Request::get('comment_form_enabled'),
+            'money_button' => Request::get('money_button'),
+
             'legal_information' => Request::get('legal_information'),
 
             'case_enabled' => Request::get('case_enabled'),
@@ -136,6 +142,10 @@ class PageController extends Controller
             'subdomain' => Request::get('subdomain'),
             'title' => Request::get('title'),
             'redirect' => Request::get('redirect'),
+
+            'google' => Request::get('google'),
+            'yandex' => Request::get('yandex'),
+            'yandex_target_button' => Request::get('yandex_target_button'),
 
             'mailchimp_api_key' => Request::get('mailchimp_api_key'),
             'mailchimp_list_id' => Request::get('mailchimp_list_id')
