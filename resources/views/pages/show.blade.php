@@ -142,9 +142,15 @@
                                 <div class="hidden-md-up">
                                     <br>
                                 </div>
-                                <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
-                                <a href="mailto:{{ $page->email }}" class="text-info a">{{ $page->email }}</a><br>
-                                {{ $page->address }}
+                                @if ($page->phone)
+                                    <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
+                                @endif
+                                @if ($page->email)
+                                    <a href="mailto:{{ $page->email }}" class="text-info a">{{ $page->email }}</a><br>
+                                @endif
+                                @if ($page->address)
+                                    {{ $page->address }}
+                                @endif
                             </div>
                         </div>
                     @endif
