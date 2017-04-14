@@ -177,7 +177,7 @@ class PageController extends Controller
 
         Session::flash('success', 'Страница создана.');
 
-        return Redirect::to("/pages/$page->id");
+        return Redirect::to("/pages");
     }
 
     /**
