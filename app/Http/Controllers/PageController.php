@@ -214,6 +214,7 @@ class PageController extends Controller
             $page->update([
                 'background_image' => $file_name
             ]);
+            return 'success';
         }
     }
 
@@ -232,6 +233,7 @@ class PageController extends Controller
             $page->update([
                 'lead_magnet_file' => $file_name
             ]);
+            return 'success';
         }
     }
 }
