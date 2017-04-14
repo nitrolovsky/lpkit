@@ -138,7 +138,6 @@ class PageController extends Controller
 
             'comments_enabled' => Request::get('comments_enabled'),
 
-            'lead_magnet_file' => Request::get('lead_magnet_file'),
             'subdomain' => Request::get('subdomain'),
             'title' => Request::get('title'),
             'redirect' => Request::get('redirect'),
@@ -175,7 +174,7 @@ class PageController extends Controller
             ]);
         }
 
-        Session::flash('success', 'Страница создана.');
+        Session::flash('success', 'Страница отредактирована.');
 
         return Redirect::to("/pages");
     }
