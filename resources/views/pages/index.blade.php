@@ -2,6 +2,7 @@
 @section('content')
     <div class="container py-5">
         <a href="/pages/create" class="btn btn-primary">Создать страницу</a>
+        <a href="/users/logout" class="btn btn-secondary">Выйти</a>
     </div>
     @if (count($pages) > 0)
         <div class="container pb-5">

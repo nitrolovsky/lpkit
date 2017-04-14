@@ -29,6 +29,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('users/logout', function() {
+    Auth::logout();
+    return redirect('/login');
+});
 Route::get('/home', 'HomeController@index');
 
 Route::post('pages/updateajax', 'PageController@updateajax');
