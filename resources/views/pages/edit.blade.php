@@ -431,11 +431,11 @@
             <br>
 
             <div class="form-group row">
-                <label for="mailchimp_id" class="col-xl-3 col-form-label">
+                <label for="mailchimp_api_key" class="col-xl-3 col-form-label">
                     Mailchimp api key
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="mailchimp_id" placeholder="aeb1391031954768639c82b75a9fdc30-us11" name="mailchimp_id" value="{{ $page->mailchimp_id }}">
+                    <input type="text" class="form-control" id="mailchimp_api_key" placeholder="aeb1391031954768639c82b75a9fdc30-us11" name="mailchimp_api_key" value="{{ $page->mailchimp_api_key }}">
                 </div>
             </div>
             <div class="form-group row">
