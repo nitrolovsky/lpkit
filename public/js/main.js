@@ -113,7 +113,7 @@ $(document).ready(function() {
             processData: false,
             data: form_data,
             type: 'post',
-            success: function(data){
+            success: function(res){
                 console.log(res);
             }
          });
