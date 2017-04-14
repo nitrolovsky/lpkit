@@ -70,7 +70,7 @@ class LeadController extends Controller
                 );
             } catch (\Mailchimp_List_AlreadySubscribed $e) {
                 if ($lead->page->redirect) {
-                    return Redirect::to($lead->page->redirect)
+                    return Redirect::to($lead->page->redirect);
                 } else {
                     return var_dump($e);
                 }
