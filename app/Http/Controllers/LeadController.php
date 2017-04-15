@@ -8,6 +8,7 @@ use Mailchimp;
 use Mail;
 
 use App\Lead;
+use App\Page;
 
 class LeadController extends Controller
 {
