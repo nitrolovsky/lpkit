@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Request;
 use Redirect;
 use Mailchimp;
+use Mail;
 
 use App\Lead;
 
@@ -38,9 +39,7 @@ class LeadController extends Controller
      */
     public function store(Request $request)
     {
-        $lead = new Lead;
-
-        $lead_last_id = $lead->create([
+        $data = array(
             'page_id' => Request::get('page_id'),
             'source' => Request::server("HTTP_REFERER"),
 
@@ -56,8 +55,22 @@ class LeadController extends Controller
 
             'paided' => Request::get('paided'),
             'status' => Request::get('status')
-        ])->id;
+        );
+
+        $lead = new Lead;
+        $lead_last_id = $lead->create($data)->id;
         $lead = Lead::find($lead_last_id);
+
+        $data['lead_id'] = $lead_last_id;
+        $data['email_author'] = $lead->page->email;
+
+        if ($lead->page->email) {
+            Mail::send("emails.lead", $data, function ($message) use ($data) {
+                $message->from("info@genlid.com", "genlid.com");
+                $message->to($data['email_author']);
+                $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
+            });
+        }
 
         if(isset($lead->page->mailchimp_api_key) and isset($lead->page->mailchimp_list_id)) {
             $mailchimp = new Mailchimp($lead->page->mailchimp_api_key);
