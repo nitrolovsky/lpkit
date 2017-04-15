@@ -97,6 +97,10 @@ class LeadController extends Controller
         } elseif (isset($lead->page->redirect)) {
             return Redirect::to($lead->page->redirect);
         }
+
+        $page = Page::find(Request::get('page_id'));
+        return view('pages.thanks')
+            ->with('page', $page);
     }
 
     /**
