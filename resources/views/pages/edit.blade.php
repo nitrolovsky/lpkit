@@ -110,6 +110,42 @@
                     <input type="text" class="form-control" id="call_to_action" placeholder="Отправить заявку" name="call_to_action" value="{{ $page->call_to_action }}">
                 </div>
             </div>
+            <div class="form-group row">
+                <label for="name_form_enabled" class="col-xl-3">
+                    Поле "Имя"
+                </label>
+                <div class="col-xl-9">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="name_form_enabled" {{ isset($page->name_form_enabled) ? 'checked' : ''}}> Отобразить поле "Имя"
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email_form_enabled" class="col-xl-3">
+                    Поле "Email"
+                </label>
+                <div class="col-xl-9">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="email_form_enabled" {{ isset($page->email_form_enabled) ? 'checked' : ''}}> Отобразить поле "Email"
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="phone_form_enabled" class="col-xl-3">
+                    Поле "Телефон"
+                </label>
+                <div class="col-xl-9">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="phone_form_enabled" {{ isset($page->phone_form_enabled) ? 'checked' : ''}}> Отобразить поле "Телефон"
+                        </label>
+                    </div>
+                </div>
+            </div>
 
             <br>
             <br>
@@ -151,7 +187,7 @@
                 <div class="col-xl-9">
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="case_enabled"> Включить блок примеров работ
+                            <input class="form-check-input" type="checkbox" name="case_enabled" {{ isset($page->case_enabled) ? 'checked' : ''}}> Включить блок примеров работ
                         </label>
                     </div>
                 </div>
@@ -318,7 +354,7 @@
                 <div class="col-xl-9">
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="comments_enabled"> Включить блок комментариев Cackle
+                            <input class="form-check-input" type="checkbox" name="comments_enabled" {{ isset($page->comments_enabled) ? 'checked' : ''}}> Включить блок комментариев Cackle
                         </label>
                     </div>
                 </div>
@@ -367,11 +403,39 @@
             <br>
 
             <div class="form-group row">
-                <label for="mailchimp_id" class="col-xl-3 col-form-label">
+                <label for="google" class="col-xl-3 col-form-label">
+                    Goolge Analytics
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="google" rows="3" name="google" placeholder="">{{ $page->google }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="yandex" class="col-xl-3 col-form-label">
+                    Яндекс Метрика
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="yandex" rows="3" name="yandex" placeholder="">{{ $page->yandex }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="google" class="col-xl-3 col-form-label">
+                    Цель на кнопку
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control" id="yandex_target_button" rows="3" name="yandex_target_button" placeholder="">{{ $page->yandex_target_button }}</textarea>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="form-group row">
+                <label for="mailchimp_api_key" class="col-xl-3 col-form-label">
                     Mailchimp api key
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="mailchimp_id" placeholder="aeb1391031954768639c82b75a9fdc30-us11" name="mailchimp_id" value="{{ $page->mailchimp_id }}">
+                    <input type="text" class="form-control" id="mailchimp_api_key" placeholder="aeb1391031954768639c82b75a9fdc30-us11" name="mailchimp_api_key" value="{{ $page->mailchimp_api_key }}">
                 </div>
             </div>
             <div class="form-group row">

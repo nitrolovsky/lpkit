@@ -13,7 +13,7 @@ $(document).ready(function() {
             url: "/pages/updateajax",
             data: {id: idV, namei: nameAttr, valuei: valueAttr },
             success: function(res) {
-
+                console.log(res);
             }
         });
     });
@@ -26,7 +26,7 @@ $(document).ready(function() {
             url: "/pages/updateajax",
             data: {id: idV, namei: nameAttr, valuei: valueAttr },
             success: function(res) {
-
+                console.log(res);
             }
         });
     });
@@ -39,7 +39,7 @@ $(document).ready(function() {
             url: "/pages/updateajax",
             data: {id: idV, namei: nameAttr, valuei: valueAttr },
             success: function(res) {
-
+                console.log(res);
             }
         });
     });
@@ -92,8 +92,8 @@ $(document).ready(function() {
             processData: false,
             data: form_data,
             type: 'post',
-            success: function(data){
-
+            success: function(res){
+                console.log(res);
             }
          });
     });
@@ -113,8 +113,8 @@ $(document).ready(function() {
             processData: false,
             data: form_data,
             type: 'post',
-            success: function(data){
-
+            success: function(res){
+                console.log(res);
             }
          });
     });

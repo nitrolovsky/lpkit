@@ -36,6 +36,7 @@ class CreatePagesTable extends Migration
             $table->string('email_form_enabled')->nullable();
             $table->string('phone_form_enabled')->nullable();
             $table->string('comment_form_enabled')->nullable();
+            $table->text('money_button')->nullable();
 
             $table->string('background_image')->nullable();
             $table->text('legal_information')->nullable();
@@ -64,12 +65,13 @@ class CreatePagesTable extends Migration
             $table->string('comments_enabled')->nullable();
 
             $table->string('lead_magnet_file')->nullable();
-            $table->string('subdomain')->nullable();
+            $table->string('subdomain')->nullable()->unique();
             $table->string('title')->nullable();
             $table->string('redirect')->nullable();
 
             $table->text('google')->nullable();
             $table->text('yandex')->nullable();
+            $table->text('yandex_target_button')->nullable();
 
             $table->string('mailchimp_api_key')->nullable();
             $table->string('mailchimp_list_id')->nullable();

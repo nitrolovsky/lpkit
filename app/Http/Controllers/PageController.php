@@ -107,6 +107,12 @@ class PageController extends Controller
             'lead_magnet' => Request::get('lead_magnet'),
             'call_to_action' => Request::get('call_to_action'),
 
+            'name_form_enabled' => Request::get('name_form_enabled'),
+            'email_form_enabled' => Request::get('email_form_enabled'),
+            'phone_form_enabled' => Request::get('phone_form_enabled'),
+            'comment_form_enabled' => Request::get('comment_form_enabled'),
+            'money_button' => Request::get('money_button'),
+
             'legal_information' => Request::get('legal_information'),
 
             'case_enabled' => Request::get('case_enabled'),
@@ -132,10 +138,13 @@ class PageController extends Controller
 
             'comments_enabled' => Request::get('comments_enabled'),
 
-            'lead_magnet_file' => Request::get('lead_magnet_file'),
             'subdomain' => Request::get('subdomain'),
             'title' => Request::get('title'),
             'redirect' => Request::get('redirect'),
+
+            'google' => Request::get('google'),
+            'yandex' => Request::get('yandex'),
+            'yandex_target_button' => Request::get('yandex_target_button'),
 
             'mailchimp_api_key' => Request::get('mailchimp_api_key'),
             'mailchimp_list_id' => Request::get('mailchimp_list_id')
@@ -143,7 +152,7 @@ class PageController extends Controller
 
         if (Request::hasFile('background_image')) {
             $extension = Request::file('background_image')->getClientOriginalExtension();
-            $upload_path = public_path('files\\' . $page->id);
+            $upload_path = public_path('files/' . $page->id);
             $file_name = 'bg.' . $extension;
             Request::file('background_image')->move($upload_path, $file_name);
 
@@ -155,7 +164,7 @@ class PageController extends Controller
         if (Request::hasFile('lead_magnet_file')) {
             $extension = Request::file('lead_magnet_file')->getClientOriginalExtension();
 
-            $upload_path = public_path('files\\' . $page->id);
+            $upload_path = public_path('files/' . $page->id);
             //$file_name = $now->format('Y-m-d-H-i-s') . '.' . $extension;
             $file_name = 'Document.' . $extension;
             Request::file('lead_magnet_file')->move($upload_path, $file_name);
@@ -165,9 +174,9 @@ class PageController extends Controller
             ]);
         }
 
-        Session::flash('success', 'Страница создана.');
+        Session::flash('success', 'Страница отредактирована.');
 
-        return Redirect::to("/pages/$page->id");
+        return Redirect::to("/pages");
     }
 
     /**
@@ -196,15 +205,15 @@ class PageController extends Controller
             $now = new DateTime();
             $extension = Request::file('background_image')->getClientOriginalExtension();
 
-            $upload_path = public_path('files\\' . $page->id);
+            $upload_path = public_path('files/' . $page->id);
             //$file_name = $now->format('Y-m-d-H-i-s') . '.' . $extension;
             $file_name = 'bg.' . $extension;
             Request::file('background_image')->move($upload_path, $file_name);
 
-
             $page->update([
                 'background_image' => $file_name
             ]);
+            return 'success';
         }
     }
 
@@ -215,15 +224,15 @@ class PageController extends Controller
             $now = new DateTime();
             $extension = Request::file('lead_magnet_file')->getClientOriginalExtension();
 
-            $upload_path = public_path('files\\' . $page->id);
+            $upload_path = public_path('files/' . $page->id);
             //$file_name = $now->format('Y-m-d-H-i-s') . '.' . $extension;
             $file_name = 'Document.' . $extension;
             Request::file('lead_magnet_file')->move($upload_path, $file_name);
 
-
             $page->update([
                 'lead_magnet_file' => $file_name
             ]);
+            return 'success';
         }
     }
 }
