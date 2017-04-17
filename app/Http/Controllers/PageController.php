@@ -24,7 +24,8 @@ class PageController extends Controller
         if (Auth::id()) {
             $user = User::find(Auth::id());
             if ($user->rights == 'admin') {
-                $pages = Page::all();
+                $pages = Page::all()
+                    ->orderBy('id', 'desc');
             } else {
                 $pages = Page::where('user_id', Auth::id())
                     ->orderBy('id', 'desc')
