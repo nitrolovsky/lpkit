@@ -10,6 +10,7 @@ use DateTime;
 use Redirect;
 
 use App\Page;
+use App\User;
 
 class PageController extends Controller
 {
@@ -20,9 +21,16 @@ class PageController extends Controller
      */
     public function index()
     {
-        $pages = Page::where('user_id', Auth::id())
-            ->orderBy('id', 'desc')
-            ->get();
+        if (Auth::id()) {
+            $user = User::find(Auth::id());
+            if ($user->rights == 'admin') {
+                $pages = Page::all();
+            } else {
+                $pages = Page::where('user_id', Auth::id())
+                    ->orderBy('id', 'desc')
+                    ->get();
+            }
+        }
 
         return View('pages.index')
             ->with('pages', $pages);
