@@ -103,14 +103,6 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="call_to_action" class="col-xl-3 col-form-label">
-                    Кнопка призыв к действию
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="call_to_action" placeholder="Отправить заявку" name="call_to_action" value="{{ $page->call_to_action }}">
-                </div>
-            </div>
-            <div class="form-group row">
                 <label for="name_form_enabled" class="col-xl-3">
                     Поле "Имя"
                 </label>
@@ -146,7 +138,15 @@
                     </div>
                 </div>
             </div>
-
+            <div class="form-group row">
+                <label for="call_to_action" class="col-xl-3 col-form-label">
+                    Кнопка призыв к действию
+                </label>
+                <div class="col-xl-9">
+                    <input type="text" class="form-control" id="call_to_action" placeholder="Отправить заявку" name="call_to_action" value="{{ $page->call_to_action }}">
+                </div>
+            </div>
+            
             <br>
             <br>
 
