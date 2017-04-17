@@ -147,6 +147,7 @@ class PageController extends Controller
 
             'comments_enabled' => Request::get('comments_enabled'),
 
+            'domain' => Request::get('domain'),
             'subdomain' => Request::get('subdomain'),
             'title' => Request::get('title'),
             'redirect' => Request::get('redirect'),

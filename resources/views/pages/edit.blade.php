@@ -375,6 +375,14 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label for="domain" class="col-xl-3 col-md-3 col-12 col-form-label">
+                    Домен
+                </label>
+                <div class="col-xl-9 col-md-9 col-12">
+                    <input type="text" class="form-control" id="domain" placeholder="domain" name="domain" value="{{ $page->domain }}">
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="subdomain" class="col-xl-3 col-md-3 col-12 col-form-label">
                     Субдомен
                 </label>

@@ -55,6 +55,7 @@ class Page extends Model
         'comments_enabled',
 
         'lead_magnet_file',
+        'domain',
         'subdomain',
         'title',
         'redirect',

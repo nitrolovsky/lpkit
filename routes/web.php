@@ -12,6 +12,13 @@
 */
 
 Route::get('/', function () {
+    $domain = Request::server("HTTP_HOST");
+    $page = App\Page::where('domain', $domain)->first();
+    if ($page) {
+        return view('pages.show')
+            ->with('page', $page);
+    }
+
     $env = explode(".", Request::server("HTTP_HOST"));
     $subdomain = array_shift($env);
     $page = App\Page::where('subdomain', $subdomain)->first();
