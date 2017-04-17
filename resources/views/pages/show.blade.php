@@ -103,7 +103,7 @@
                                 <div class="hidden-lg-up">
                                     <br>
                                 </div>
-                                <h3 class="px-2 pb-3 text-center weight-700">
+                                <h3 class="pb-3 text-center weight-700">
                                     {{ $page->lead_magnet }}
                                 </h3>
                                 <form action="/leads" method="POST">
