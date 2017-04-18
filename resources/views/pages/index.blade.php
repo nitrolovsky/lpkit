@@ -16,12 +16,12 @@
                     </div>
                     @if ($page->subdomain)
                         <div class="col-xl-3">
-                            <a href="{{ $page->subdomain }}.nejron.com" target="_blank">{{ $page->subdomain }}.nejron.com</a>
+                            <a href="http://{{ $page->subdomain }}.nejron.com" target="_blank">{{ $page->subdomain }}.nejron.com</a>
                         </div>
                     @endif
                     @if ($page->domain)
                         <div class="col-xl-3">
-                            <a href="{{ $page->domain }}.nejron.com" target="_blank">{{ $page->domain }}</a>
+                            <a href="http://{{ $page->domain }}.nejron.com" target="_blank">{{ $page->domain }}</a>
                         </div>
                     @endif
                 </div>
