@@ -21,7 +21,7 @@
                     @endif
                     @if ($page->domain)
                         <div class="col-xl-3">
-                            <a href="http://{{ $page->domain }}.com" target="_blank">{{ $page->domain }}</a>
+                            <a href="http://{{ $page->domain }}" target="_blank">{{ $page->domain }}</a>
                         </div>
                     @endif
                 </div>
