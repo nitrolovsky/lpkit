@@ -14,6 +14,16 @@
                     <div class="col-xl-3">
                         <a class="btn btn-warning btn-sm" href="/pages/{{ $page->id }}/edit" role="button" target="_blank"><span class="fa fa-fw fa-pencil"></span>&nbsp;Редактировать</a>
                     </div>
+                    @if ($page->subdomain)
+                        <div class="col-xl-3">
+                            <a href="{{ $page->subdomain }}.nejron.com" target="_blank">{{ $page->subdomain }}.nejron.com</a>
+                        </div>
+                    @endif
+                    @if ($page->domain)
+                        <div class="col-xl-3">
+                            <a href="{{ $page->domain }}.nejron.com" target="_blank">{{ $page->domain }}</a>
+                        </div>
+                    @endif
                 </div>
             @endforeach
         </div>
