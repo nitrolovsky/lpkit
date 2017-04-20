@@ -101,8 +101,6 @@ class PageController extends Controller
         $page = Page::find($id);
 
         $page->update([
-            'user_id' => Auth::id(),
-
             'company_name' => Request::get('company_name'),
             'description' => Request::get('description'),
             'phone' => Request::get('phone'),
