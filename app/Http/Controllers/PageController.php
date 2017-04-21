@@ -31,6 +31,8 @@ class PageController extends Controller
                     ->orderBy('id', 'desc')
                     ->get();
             }
+        } else {
+            return Redirect::to('/login');
         }
 
         return View('pages.index')
