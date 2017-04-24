@@ -35,9 +35,7 @@ class LeadController extends Controller
                     $leads = Lead::orderByDesc('id')
                         ->get();
                 } else {
-                    $leads = Lead::where('user_id', Auth::id())
-                        ->orderBy('id', 'desc')
-                        ->get();
+                    $leads = DB::table('leads')->whereIn('page_id', $pages_id);
                 }
             } else {
                 return View('leads.index')
