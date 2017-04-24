@@ -2,8 +2,8 @@
 @section('content')
     @if (count($leads) > 0)
         <div class="container">
-            <div class="row">
-                @foreach ($leads as $lead)
+            @foreach ($leads as $lead)
+                <div class="row">
                     <div class="card card-block">
                         <div class="row py-1">
                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-right text-lg-right text-md-right text-left">
@@ -72,8 +72,8 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
         </div>
     @endif
 @endsection
