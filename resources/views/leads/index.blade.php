@@ -73,6 +73,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
             @endforeach
         </div>
     @endif
