@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
+
 use Request;
 use Redirect;
 use Mailchimp;
 use Mail;
+use DB;
 
 use App\Lead;
 use App\Page;
@@ -19,7 +22,31 @@ class LeadController extends Controller
      */
     public function index()
     {
-        //
+        if (Auth::id()) {
+            $pages = DB::table('pages')
+                ->where('user_id', Auth::id())
+                ->get();
+            foreach($pages as $page) {
+                $pages_id = $page->id;
+            }
+            $leads = DB::table('leads')->whereIn('page_id', $pages_id);
+
+
+            return var_dump($leads);
+            if (Auth::user()->rights == 'admin') {
+                $leads = Lead::orderByDesc('id')
+                    ->get();
+            } else {
+                $leads = Lead::where('user_id', Auth::id())
+                    ->orderBy('id', 'desc')
+                    ->get();
+            }
+        } else {
+            return Redirect::to('/pages');
+        }
+
+        return View('leads.index')
+            ->with('leads', $leads);
     }
 
     /**

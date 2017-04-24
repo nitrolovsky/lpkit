@@ -1,11 +1,10 @@
 @extends('layouts.main')
 @section('content')
-    <div class="container py-5">
+    <div class="container">
         <a href="/pages/create" class="btn btn-primary">Создать страницу</a>
-        <a href="/users/logout" class="btn btn-secondary">Выйти</a>
     </div>
     @if (count($pages) > 0)
-        <div class="container pb-5">
+        <div class="container py-5">
             @foreach ($pages as $page)
                 <div class="row py-2">
                     <div class="col-xl-3">

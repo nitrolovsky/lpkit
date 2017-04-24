@@ -22,7 +22,22 @@
         </script>
     </head>
     <body>
-        @yield('content')
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="/pages">Страницы</a>
+                        <a class="nav-link" href="/leads">Лиды</a>
+                        <br>
+                        <a class="nav-link disabled" href="#">{{ Auth::user()->email }} </a>
+                        <a class="nav-link" href="/users/logout">Выйти</a>
+                    </nav>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                    @yield('content')
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>

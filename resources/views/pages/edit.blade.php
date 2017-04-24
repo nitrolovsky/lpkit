@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <div class="container pb-5">
-        <h1 class="text-center py-5">
+        <h1 class="text-center pb-5">
             Редактирование страницы
         </h1>
         <form method="POST" action="/pages/{{ $page->id }}" enctype="multipart/form-data">
@@ -146,7 +146,7 @@
                     <input type="text" class="form-control" id="call_to_action" placeholder="Отправить заявку" name="call_to_action" value="{{ $page->call_to_action }}">
                 </div>
             </div>
-            
+
             <br>
             <br>
 
