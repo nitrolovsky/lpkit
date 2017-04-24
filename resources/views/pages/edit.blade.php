@@ -66,7 +66,7 @@
                     Оффер
                 </label>
                 <div class="col-xl-9">
-                    <textarea class="form-control" id="offer" rows="3" name="offer" placeholder="8 октября. Бесплатный Мастер-класс Продажи фитнес тренера х2. Вживую в Москве и Онлайн по РФ и СНГ.">{{ $page->offer }}</textarea>
+                    <textarea class="form-control textarea" id="offer" rows="3" name="offer" placeholder="8 октября. Бесплатный Мастер-класс Продажи фитнес тренера х2. Вживую в Москве и Онлайн по РФ и СНГ.">{{ $page->offer }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -74,7 +74,7 @@
                     Буллеты
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="bullets" rows="3" name="bullets" placeholder="Для тех, кто хочет стать или уже является фитнес тренером.<br> Как заработать первые 50000 рублей за 30 дней.<br> Как удвоить продажи.<br> Как перестать жить в фитнес-зале.">{{ $page->bullets }}</textarea>
+                     <textarea class="form-control textarea" id="bullets" rows="3" name="bullets" placeholder="Для тех, кто хочет стать или уже является фитнес тренером.<br> Как заработать первые 50000 рублей за 30 дней.<br> Как удвоить продажи.<br> Как перестать жить в фитнес-зале.">{{ $page->bullets }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -99,7 +99,7 @@
                     Лид-магнит
                 </label>
                 <div class="col-xl-9">
-                    <textarea class="form-control" id="lead_magnet" rows="3" name="lead_magnet" placeholder="Зарегистрируйтесь сейчас на Мастер-класс и уже сейчас мы отправим 5 полезных видео по фитнесу">{{ $page->lead_magnet }}</textarea>
+                    <textarea class="form-control textarea" id="lead_magnet" rows="3" name="lead_magnet" placeholder="Зарегистрируйтесь сейчас на Мастер-класс и уже сейчас мы отправим 5 полезных видео по фитнесу">{{ $page->lead_magnet }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -173,7 +173,7 @@
                     Юридическая информация
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="legal" rows="3" name="legal_information" placeholder="© 2017 nejron.com Все права защищены">{{ $page->legal_information }}</textarea>
+                     <textarea class="form-control textarea" id="legal" rows="3" name="legal_information" placeholder="© 2017 nejron.com Все права защищены">{{ $page->legal_information }}</textarea>
                 </div>
             </div>
 
@@ -213,7 +213,7 @@
                     Описание к видео кейсу 1
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="case_text_1" rows="3" name="case_text_1" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_1 }}</textarea>
+                     <textarea class="form-control textarea" id="case_text_1" rows="3" name="case_text_1" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_1 }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -229,7 +229,7 @@
                     Описание к видео кейсу 2
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="case_text_2" rows="3" name="case_text_2" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_2 }}</textarea>
+                     <textarea class="form-control textarea" id="case_text_2" rows="3" name="case_text_2" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_2 }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -245,7 +245,7 @@
                     Описание к видео кейсу 3
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="case_text_3" rows="3" name="case_text_3" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_3 }}</textarea>
+                     <textarea class="form-control textarea" id="case_text_3" rows="3" name="case_text_3" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_3 }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -261,7 +261,7 @@
                     Описание к видео кейсу 4
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="case_text_4" rows="3" name="case_text_4" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_4 }}</textarea>
+                     <textarea class="form-control textarea" id="case_text_4" rows="3" name="case_text_4" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_4 }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -277,7 +277,7 @@
                     Описание к видео кейсу 5
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="case_text_5" rows="3" name="case_text_5" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_5 }}</textarea>
+                     <textarea class="form-control textarea" id="case_text_5" rows="3" name="case_text_5" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_5 }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -293,7 +293,7 @@
                     Описание к видео кейсу 6
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="case_text_6" rows="3" name="case_text_6" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_6 }}</textarea>
+                     <textarea class="form-control textarea" id="case_text_6" rows="3" name="case_text_6" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_6 }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -309,7 +309,7 @@
                     Описание к видео кейсу 7
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="case_text_7" rows="3" name="case_text_7" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_7 }}</textarea>
+                     <textarea class="form-control textarea" id="case_text_7" rows="3" name="case_text_7" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_7 }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -325,7 +325,7 @@
                     Описание к видео кейсу 8
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="case_text_8" rows="3" name="case_text_8" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_8 }}</textarea>
+                     <textarea class="form-control textarea" id="case_text_8" rows="3" name="case_text_8" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_8 }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -341,7 +341,7 @@
                     Описание к видео кейсу 9
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="case_text_9" rows="3" name="case_text_9" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_9 }}</textarea>
+                     <textarea class="form-control textarea" id="case_text_9" rows="3" name="case_text_9" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_9 }}</textarea>
                 </div>
             </div>
             <br>
@@ -415,7 +415,7 @@
                     Goolge Analytics
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="google" rows="3" name="google" placeholder="">{{ $page->google }}</textarea>
+                     <textarea class="form-control textarea" id="google" rows="3" name="google" placeholder="">{{ $page->google }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -423,7 +423,7 @@
                     Яндекс Метрика
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="yandex" rows="3" name="yandex" placeholder="">{{ $page->yandex }}</textarea>
+                     <textarea class="form-control textarea" id="yandex" rows="3" name="yandex" placeholder="">{{ $page->yandex }}</textarea>
                 </div>
             </div>
             <div class="form-group row">
@@ -431,7 +431,7 @@
                     Цель на кнопку
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control" id="yandex_target_button" rows="3" name="yandex_target_button" placeholder="">{{ $page->yandex_target_button }}</textarea>
+                     <textarea class="form-control textarea" id="yandex_target_button" rows="3" name="yandex_target_button" placeholder="">{{ $page->yandex_target_button }}</textarea>
                 </div>
             </div>
 

@@ -47,4 +47,5 @@ Route::post('pages/updateajaximage', 'PageController@updateajaximage');
 Route::post('pages/updateajaxfile', 'PageController@updateajaxfile');
 Route::resource('pages', 'PageController');
 
+Route::post('leads/updatestatus', 'LeadController@updatestatus');
 Route::resource('leads', 'LeadController');

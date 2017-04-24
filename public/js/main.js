@@ -4,6 +4,7 @@ $(document).ready(function() {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
+
     $("input").on("input", function () {
         var idV = $('input[name="id"]').val();
         var valueAttr = $(this).val();
@@ -17,20 +18,22 @@ $(document).ready(function() {
             }
         });
     });
-    $("textarea").on("input", function () {
-        var idV = $('input[name="id"]').val();
+
+    $(".status").on("input", function () {
         var valueAttr = $(this).val();
         var nameAttr = $(this).attr("name");
+        var idAttr = $(this).attr("id");
         $.ajax({
             type: "POST",
-            url: "/pages/updateajax",
-            data: {id: idV, namei: nameAttr, valuei: valueAttr },
+            url: "/leads/updatestatus",
+            data: {id: idAttr, namei: nameAttr, valuei: valueAttr },
             success: function(res) {
                 console.log(res);
             }
         });
     });
-    $("textarea").on("input", function () {
+
+    $(".textarea").on("input", function () {
         var idV = $('input[name="id"]').val();
         var valueAttr = $(this).val();
         var nameAttr = $(this).attr("name");
@@ -124,4 +127,6 @@ $(document).ready(function() {
         valueAttr = valueAttr + "?rel=0&showinfo=0";
          $('#video_iframe').attr("src", valueAttr);
     });
+
+
 });

@@ -26,21 +26,24 @@ class LeadController extends Controller
             $pages = DB::table('pages')
                 ->where('user_id', Auth::id())
                 ->get();
-            foreach($pages as $page) {
-                $pages_id = $page->id;
-            }
-            $leads = DB::table('leads')->whereIn('page_id', $pages_id);
-
-
-            return var_dump($leads);
-            if (Auth::user()->rights == 'admin') {
-                $leads = Lead::orderByDesc('id')
-                    ->get();
+            if (count($pages) > 0) {
+                foreach($pages as $page) {
+                    $pages_id[] = $page->id;
+                }
+                $leads = DB::table('leads')->whereIn('page_id', $pages_id);
+                if (Auth::user()->rights == 'admin') {
+                    $leads = Lead::orderByDesc('id')
+                        ->get();
+                } else {
+                    $leads = Lead::where('user_id', Auth::id())
+                        ->orderBy('id', 'desc')
+                        ->get();
+                }
             } else {
-                $leads = Lead::where('user_id', Auth::id())
-                    ->orderBy('id', 'desc')
-                    ->get();
+                return View('leads.index')
+                    ->with('leads', $leads);
             }
+
         } else {
             return Redirect::to('/pages');
         }
@@ -163,6 +166,14 @@ class LeadController extends Controller
     public function update(Request $request, $id)
     {
         //
+    }
+
+    public function updatestatus(Request $request) {
+        $lead = Lead::find(Request::get("id"));
+        $lead->update([
+            Request::get("namei") => Request::get("valuei")
+        ]);
+        return Request::get("valuei");
     }
 
     /**
