@@ -4,7 +4,7 @@
         <div class="container">
             @foreach ($leads as $lead)
                 <div class="row">
-                    <div class="card card-block">
+                    <div class="card card-block {{ empty($lead->status) ? 'card-outline-danger' : '' }}">
                         <div class="row py-1">
                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-right text-lg-right text-md-right text-left">
                                 Идентификатор
