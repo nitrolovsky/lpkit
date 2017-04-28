@@ -26,6 +26,7 @@
             <div class="row py-5">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
                     <nav class="nav flex-column">
+                        <a class="nav-link text-uppercase" href="/">{{ Request::server('HTTP_HOST') }}</a>
                         <a class="nav-link" href="/pages">Страницы</a>
                         <a class="nav-link" href="/leads">Лиды</a>
                         <br>
