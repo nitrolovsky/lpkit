@@ -22,7 +22,7 @@
                     Имя компании
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="company_name" placeholder="Nejron" name="company_name" value="{{ $page->company_name }}">
+                    <input type="text" class="form-control" id="company_name" placeholder="LPKIT" name="company_name" value="{{ $page->company_name }}">
                 </div>
             </div>
             <div class="form-group row">
@@ -46,7 +46,7 @@
                     Email
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="email" placeholder="support@nejron.com" name="email" value="{{ $page->email }}">
+                    <input type="text" class="form-control" id="email" placeholder="info@lpkit.ru" name="email" value="{{ $page->email }}">
                 </div>
             </div>
             <div class="form-group row">
@@ -173,7 +173,7 @@
                     Юридическая информация
                 </label>
                 <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="legal" rows="3" name="legal_information" placeholder="© 2017 nejron.com Все права защищены">{{ $page->legal_information }}</textarea>
+                     <textarea class="form-control textarea" id="legal" rows="3" name="legal_information" placeholder="© 2017 lpkit.ru Все права защищены">{{ $page->legal_information }}</textarea>
                 </div>
             </div>
 
@@ -422,7 +422,7 @@
                     Адрес следующего сайта
                 </label>
                 <div class="col-xl-9">
-                    <input type="text" class="form-control" id="redirect" placeholder="http://krossovkioptprice.nejron.com" name="redirect" value="{{ $page->redirect }}">
+                    <input type="text" class="form-control" id="redirect" placeholder="http://krossovkioptprice.lpkit.com" name="redirect" value="{{ $page->redirect }}">
                 </div>
             </div>
 
