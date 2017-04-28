@@ -15,7 +15,7 @@
                     </div>
                     @if ($page->subdomain)
                         <div class="col-xl-3">
-                            <a href="http://{{ $page->subdomain }}.nejron.com" target="_blank">{{ $page->subdomain }}.nejron.com</a>
+                            <a href="http://{{ $page->subdomain }}.{{ Request::server('HTTP_HOST') }}" target="_blank">{{ $page->subdomain }}.{{ Request::server('HTTP_HOST') }}</a>
                         </div>
                     @endif
                     @if ($page->domain)
