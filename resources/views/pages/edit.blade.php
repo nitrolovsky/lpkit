@@ -181,188 +181,243 @@
             <br>
 
             <div id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="card">
-                <div class="card-header" role="tab" id="headingOne">
-                  <h5 class="mb-0">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Примеры работ
-                    </a>
-                  </h5>
-                </div>
-
-                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="card-block">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="form-group row">
-                <label for="case_enabled" class="col-xl-3">
-                    Примеры работ (Кейсы)
-                </label>
-                <div class="col-xl-9">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="case_enabled" {{ isset($page->case_enabled) ? 'checked' : ''}}> Включить блок примеров работ
-                        </label>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Примеры работ
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="card-block">
+                            <div class="form-group row">
+                                <label for="case_enabled" class="col-xl-3">
+                                    Примеры работ (Кейсы)
+                                </label>
+                                <div class="col-xl-9">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="case_enabled" {{ isset($page->case_enabled) ? 'checked' : ''}}> Включить блок примеров работ
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_title" class="col-xl-3 col-form-label">
+                                    Заголовок блока с кейсами
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_title" placeholder="Посмотрите примеры наших работ" name="case_title" value="{{ $page->case_title }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_video_1" class="col-xl-3 col-form-label">
+                                    Ссылка на youtube видео кейс 1
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_video_1" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_1" value="{{ $page->case_video_1 }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_text_1" class="col-xl-3 col-form-label">
+                                    Описание к видео кейсу 1
+                                </label>
+                                <div class="col-xl-9">
+                                     <textarea class="form-control textarea" id="case_text_1" rows="3" name="case_text_1" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_1 }}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_video_2" class="col-xl-3 col-form-label">
+                                    Ссылка на youtube видео кейс 2
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_video_2" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_2" value="{{ $page->case_video_2 }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_text_2" class="col-xl-3 col-form-label">
+                                    Описание к видео кейсу 2
+                                </label>
+                                <div class="col-xl-9">
+                                     <textarea class="form-control textarea" id="case_text_2" rows="3" name="case_text_2" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_2 }}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_video_3" class="col-xl-3 col-form-label">
+                                    Ссылка на youtube видео кейс 3
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_video_3" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_3" value="{{ $page->case_video_3 }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_text_3" class="col-xl-3 col-form-label">
+                                    Описание к видео кейсу 3
+                                </label>
+                                <div class="col-xl-9">
+                                     <textarea class="form-control textarea" id="case_text_3" rows="3" name="case_text_3" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_3 }}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_video_4" class="col-xl-3 col-form-label">
+                                    Ссылка на youtube видео кейс 4
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_video_4" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_4" value="{{ $page->case_video_4 }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_text_4" class="col-xl-3 col-form-label">
+                                    Описание к видео кейсу 4
+                                </label>
+                                <div class="col-xl-9">
+                                     <textarea class="form-control textarea" id="case_text_4" rows="3" name="case_text_4" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_4 }}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_video_5" class="col-xl-3 col-form-label">
+                                    Ссылка на youtube видео кейс 5
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_video_5" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_5" value="{{ $page->case_video_5 }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_text_5" class="col-xl-3 col-form-label">
+                                    Описание к видео кейсу 5
+                                </label>
+                                <div class="col-xl-9">
+                                     <textarea class="form-control textarea" id="case_text_5" rows="3" name="case_text_5" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_5 }}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_video_6" class="col-xl-3 col-form-label">
+                                    Ссылка на youtube видео кейс 6
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_video_6" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_6" value="{{ $page->case_video_6 }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_text_6" class="col-xl-3 col-form-label">
+                                    Описание к видео кейсу 6
+                                </label>
+                                <div class="col-xl-9">
+                                     <textarea class="form-control textarea" id="case_text_6" rows="3" name="case_text_6" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_6 }}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_video_7" class="col-xl-3 col-form-label">
+                                    Ссылка на youtube видео кейс 7
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_video_7" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_7" value="{{ $page->case_video_7 }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_text_7" class="col-xl-3 col-form-label">
+                                    Описание к видео кейсу 7
+                                </label>
+                                <div class="col-xl-9">
+                                     <textarea class="form-control textarea" id="case_text_7" rows="3" name="case_text_7" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_7 }}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_video_8" class="col-xl-3 col-form-label">
+                                    Ссылка на youtube видео кейс 8
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_video_8" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_8" value="{{ $page->case_video_8 }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_text_8" class="col-xl-3 col-form-label">
+                                    Описание к видео кейсу 8
+                                </label>
+                                <div class="col-xl-9">
+                                     <textarea class="form-control textarea" id="case_text_8" rows="3" name="case_text_8" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_8 }}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_video_9" class="col-xl-3 col-form-label">
+                                    Ссылка на youtube видео кейс 9
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="case_video_9" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_9" value="{{ $page->case_video_9 }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="case_text_9" class="col-xl-3 col-form-label">
+                                    Описание к видео кейсу 9
+                                </label>
+                                <div class="col-xl-9">
+                                     <textarea class="form-control textarea" id="case_text_9" rows="3" name="case_text_9" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_9 }}</textarea>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="case_title" class="col-xl-3 col-form-label">
-                    Заголовок блока с кейсами
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_title" placeholder="Посмотрите примеры наших работ" name="case_title" value="{{ $page->case_title }}">
+
+            <br>
+
+            <div id="slides-accordion" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" role="tab" id="slides-heading">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#slides-accordion" href="#slide-collapse" aria-expanded="true" aria-controls="slide-collapse">
+                                Слайды
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="slide-collapse" class="collapse" role="tabpanel" aria-labelledby="slides-heading">
+                        <div class="card-block">
+                            <div class="form-group row">
+                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
+                                    Цвет фона
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
+                                    Заголовок
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
+                                    Изображение
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
+                                    Подзаголовок
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
+                                    Текст
+                                </label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="case_video_1" class="col-xl-3 col-form-label">
-                    Ссылка на youtube видео кейс 1
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_video_1" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_1" value="{{ $page->case_video_1 }}">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_text_1" class="col-xl-3 col-form-label">
-                    Описание к видео кейсу 1
-                </label>
-                <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="case_text_1" rows="3" name="case_text_1" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_1 }}</textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_video_2" class="col-xl-3 col-form-label">
-                    Ссылка на youtube видео кейс 2
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_video_2" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_2" value="{{ $page->case_video_2 }}">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_text_2" class="col-xl-3 col-form-label">
-                    Описание к видео кейсу 2
-                </label>
-                <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="case_text_2" rows="3" name="case_text_2" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_2 }}</textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_video_3" class="col-xl-3 col-form-label">
-                    Ссылка на youtube видео кейс 3
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_video_3" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_3" value="{{ $page->case_video_3 }}">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_text_3" class="col-xl-3 col-form-label">
-                    Описание к видео кейсу 3
-                </label>
-                <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="case_text_3" rows="3" name="case_text_3" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_3 }}</textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_video_4" class="col-xl-3 col-form-label">
-                    Ссылка на youtube видео кейс 4
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_video_4" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_4" value="{{ $page->case_video_4 }}">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_text_4" class="col-xl-3 col-form-label">
-                    Описание к видео кейсу 4
-                </label>
-                <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="case_text_4" rows="3" name="case_text_4" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_4 }}</textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_video_5" class="col-xl-3 col-form-label">
-                    Ссылка на youtube видео кейс 5
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_video_5" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_5" value="{{ $page->case_video_5 }}">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_text_5" class="col-xl-3 col-form-label">
-                    Описание к видео кейсу 5
-                </label>
-                <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="case_text_5" rows="3" name="case_text_5" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_5 }}</textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_video_6" class="col-xl-3 col-form-label">
-                    Ссылка на youtube видео кейс 6
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_video_6" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_6" value="{{ $page->case_video_6 }}">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_text_6" class="col-xl-3 col-form-label">
-                    Описание к видео кейсу 6
-                </label>
-                <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="case_text_6" rows="3" name="case_text_6" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_6 }}</textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_video_7" class="col-xl-3 col-form-label">
-                    Ссылка на youtube видео кейс 7
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_video_7" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_7" value="{{ $page->case_video_7 }}">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_text_7" class="col-xl-3 col-form-label">
-                    Описание к видео кейсу 7
-                </label>
-                <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="case_text_7" rows="3" name="case_text_7" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_7 }}</textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_video_8" class="col-xl-3 col-form-label">
-                    Ссылка на youtube видео кейс 8
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_video_8" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_8" value="{{ $page->case_video_8 }}">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_text_8" class="col-xl-3 col-form-label">
-                    Описание к видео кейсу 8
-                </label>
-                <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="case_text_8" rows="3" name="case_text_8" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_8 }}</textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_video_9" class="col-xl-3 col-form-label">
-                    Ссылка на youtube видео кейс 9
-                </label>
-                <div class="col-xl-9">
-                    <input type="text" class="form-control" id="case_video_9" placeholder="https://www.youtube.com/embed/LwKl8pN3i5o" name="case_video_9" value="{{ $page->case_video_9 }}">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="case_text_9" class="col-xl-3 col-form-label">
-                    Описание к видео кейсу 9
-                </label>
-                <div class="col-xl-9">
-                     <textarea class="form-control textarea" id="case_text_9" rows="3" name="case_text_9" placeholder="Стоимость рабост составила 11 500 рублей">{{ $page->case_text_9 }}</textarea>
-                </div>
-            </div>
+
             <br>
             <br>
 

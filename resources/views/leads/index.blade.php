@@ -6,64 +6,21 @@
                 <div class="row">
                     <div class="card card-block {{ empty($lead->status) ? 'card-outline-danger' : '' }}">
                         <div class="row py-1">
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-right text-lg-right text-md-right text-left">
-                                Идентификатор
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 {{ $lead->id }}
-                            </div>
-                        </div>
-
-                        <div class="row py-1">
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-right text-lg-right text-md-right text-left">
-                                Дата и время создания
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                                <br>
                                 {{ $lead->created_at }}
-                            </div>
-                        </div>
-
-                        <div class="row py-1">
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-right text-lg-right text-md-right text-left">
-                                Источник
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                                <br>
                                 {{ $lead->source }}
                             </div>
-                        </div>
-
-                        <div class="row py-1">
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-right text-lg-right text-md-right text-left">
-                                Имя
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 {{ $lead->name }}
-                            </div>
-                        </div>
-
-                        <div class="row py-1">
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-right text-lg-right text-md-right text-left">
-                                Email
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                                <br>
                                 {{ $lead->email }}
-                            </div>
-                        </div>
-
-                        <div class="row py-1">
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-right text-lg-right text-md-right text-left">
-                                Телефон
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                                <br>
                                 {{ $lead->phone }}
                             </div>
-                        </div>
-
-                        <div class="row py-1">
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-xl-right text-lg-right text-md-right text-left">
-                                Статус
-                            </div>
-                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <form method="POST" action="/leads/{{ $lead->id }}" class="form-inline">
                                     {{ method_field('PUT') }}
                                     {{ csrf_field() }}
