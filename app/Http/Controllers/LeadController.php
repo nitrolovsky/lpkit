@@ -127,9 +127,7 @@ class LeadController extends Controller
             return Redirect::to($lead->page->redirect);
         }
 
-        $page = Page::find(Request::get('page_id'));
-        return view('pages.thanks')
-            ->with('page', $page);
+        return redirect()->action('PageController@thanks', ['id' => Request::get('page_id')]);
     }
 
     /**

@@ -245,4 +245,10 @@ class PageController extends Controller
             return 'success';
         }
     }
+
+    public function thanks(Request $request) {
+        $page = Page::find($request::get('id'));
+        return view('pages.thanks')
+            ->with('page', $page);
+    }
 }

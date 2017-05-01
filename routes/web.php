@@ -42,6 +42,7 @@ Route::get('users/logout', function() {
 });
 Route::get('/home', 'HomeController@index');
 
+Route::get('pages/thanks', 'PageController@thanks');
 Route::post('pages/updateajax', 'PageController@updateajax');
 Route::post('pages/updateajaximage', 'PageController@updateajaximage');
 Route::post('pages/updateajaxfile', 'PageController@updateajaxfile');
