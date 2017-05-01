@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('layouts.thanks')
 @section('content')
     <style>
         html {
