@@ -95,7 +95,7 @@ class LeadController extends Controller
 
         if ($lead->page->email) {
             Mail::send("emails.lead", $data, function ($message) use ($data) {
-                $message->from("info@genlid.com", "genlid.com");
+                $message->from("info@lpkit.ru", "lpkit.ru");
                 $message->to($data['email_author']);
                 $message->subject("Заявка от " . $data['source'] . " в " . date ("Y.m.d H:m:s"));
             });
