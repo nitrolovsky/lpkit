@@ -15,8 +15,12 @@ body {
 }
 
 .f {
-    font-family: "Open Sans" !important;
+    font-family: "Exo 2" !important;
     font-size: 17px !important;
+}
+
+.font-open-sans {
+    font-family: "Open Sans" !important;
 }
 
 .black {
