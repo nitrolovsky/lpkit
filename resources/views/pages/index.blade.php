@@ -11,16 +11,16 @@
                         <a href="/pages/{{ $page->id }}" target="_blank">/pages/{{ $page->id }}</a>
                     </div>
                     <div class="col-xl-3">
-                        <a class="btn btn-warning btn-sm" href="/pages/{{ $page->id }}/edit" role="button" target="_blank"><span class="fa fa-fw fa-pencil"></span>&nbsp;Редактировать</a>
+                        <a class="btn btn-warning btn-sm" href="/pages/{{ $page->id }}/edit" role="button"><span class="fa fa-fw fa-pencil"></span>&nbsp;Редактировать</a>
                     </div>
                     @if ($page->subdomain)
                         <div class="col-xl-3">
-                            <a href="http://{{ $page->subdomain }}.{{ Request::server('HTTP_HOST') }}" target="_blank">{{ $page->subdomain }}.{{ Request::server('HTTP_HOST') }}</a>
+                            <a href="http://{{ $page->subdomain }}.{{ Request::server('HTTP_HOST') }}">{{ $page->subdomain }}.{{ Request::server('HTTP_HOST') }}</a>
                         </div>
                     @endif
                     @if ($page->domain)
                         <div class="col-xl-3">
-                            <a href="http://{{ $page->domain }}" target="_blank">{{ $page->domain }}</a>
+                            <a href="http://{{ $page->domain }}">{{ $page->domain }}</a>
                         </div>
                     @endif
                 </div>
