@@ -300,7 +300,7 @@
                     <div class="container pt-5 pb-5">
                         <div class="row">
                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-                                <h2 class="text-center my-0 weight-700 font-open-sans">
+                                <h2 class="text-center my-0 weight-700 font-pt-sans">
                                     {{ $page->slides[$i - 1]->title }}
                                 </h2>
                             </div>
@@ -315,10 +315,10 @@
                     <div class="container pb-5">
                         <div class="row">
                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-                                <h4 class="pt-5 my-0 weight-700 font-open-sans">
+                                <h4 class="pt-5 my-0 weight-700 font-pt-sans">
                                     {{ $page->slides[$i - 1]->subtitle }}
                                 </h4>
-                                <div class="pt-4 font-open-sans">
+                                <div class="pt-4 font-pt-sans f-s-17">
                                     {{ $page->slides[$i - 1]->text }}
                                 </div>
                             </div>

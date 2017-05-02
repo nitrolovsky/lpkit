@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700,800,900&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic');
-
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,800,900|Noto+Sans:400,700|Open+Sans:300,400,700,800|PT+Sans|Roboto:300,400,500,700,900&subset=cyrillic');
 body {
     color: black;
 }
@@ -14,13 +13,12 @@ body {
     font-weight: 300 !important;
 }
 
-.f {
-    font-family: "Exo 2" !important;
+.f-s-17 {
     font-size: 17px !important;
 }
 
-.font-open-sans {
-    font-family: "Open Sans" !important;
+.font-pt-sans {
+    font-family: "PT Sans" !important;
 }
 
 .black {
