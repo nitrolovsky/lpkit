@@ -22,7 +22,12 @@
                 min-height: 100%;
             }
         </style>
-        @if ($page->case_enabled or $page->comments_enabled)
+        @php
+            if ($page->slides_number and $page->slides_number > 0) {
+                $slides_enabled = 1;
+            }
+        @endphp
+        @if ($page->case_enabled or $page->comments_enabled or $slides_enabled)
             <style>
                 body {
                     background-color: white !important;
@@ -88,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    @if ($page->case_enabled or $page->comments_enabled)
+                    @if ($page->case_enabled or $page->comments_enabled or $slides_enabled)
                         <div class="row py-5">
                     @else
                         <div class="row pt-5">
@@ -286,6 +291,41 @@
                 @endif
             </div>
         @endif
+
+        @if ($slides_enabled)
+            @for ($i = 1; $i <= $page->slides_number; $i++)
+                <div class="{{ $page->slides[$i - 1]->bg_color or '' }}">
+                    <div class="container pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
+                                <h2 class="font text-center weight-700">
+                                    {{ $page->slides[$i - 1]->title }}
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid hidden-sm-up px-0">
+                        <img src="/files/{{ $page->id }}/{{ $page->slides[$i - 1]->image }}" class="img-fluid mx-auto d-block" alt="{{ $page->slides[$i - 1]->subtitle }}">
+                    </div>
+                    <div class="container hidden-xs-down px-0">
+                        <img src="/files/{{ $page->id }}/{{ $page->slides[$i - 1]->image }}" class="img-fluid mx-auto d-block" alt="{{ $page->slides[$i - 1]->subtitle }}">
+                    </div>
+                    <div class="container pb-5">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
+                                <h4 class="pt-5 my-0 f weight-700">
+                                    {{ $page->slides[$i - 1]->subtitle }}
+                                </h4>
+                                <div class="pt-4 f">
+                                    {{ $page->slides[$i - 1]->text }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endfor
+        @endif
+
         @if ($page->comments_enabled)
             <div class="container">
                 <div class="row">

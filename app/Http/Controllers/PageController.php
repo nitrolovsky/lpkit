@@ -11,6 +11,7 @@ use Redirect;
 
 use App\Page;
 use App\User;
+use App\PageSlide;
 
 class PageController extends Controller
 {
@@ -145,6 +146,8 @@ class PageController extends Controller
             'case_video_9' => Request::get('case_video_9'),
             'case_text_9' => Request::get('case_text_9'),
 
+            'slides_number' => Request::get('slides_number'),
+
             'comments_enabled' => Request::get('comments_enabled'),
 
             'domain' => Request::get('domain'),
@@ -159,6 +162,56 @@ class PageController extends Controller
             'mailchimp_api_key' => Request::get('mailchimp_api_key'),
             'mailchimp_list_id' => Request::get('mailchimp_list_id')
         ]);
+
+        if (Request::get('slides_number') and Request::get('slides_number') > 0) {
+            for ($i = 1; $i <= Request::get('slides_number'); $i++) {
+                if (Request::get("slide_id_$i")) {
+                    $page_slide = PageSlide::find(Request::get("slide_id_$i"));
+                    $page_slide->update([
+                        'page_id' => $id,
+                        'priority' => Request::get("slide_priority_$i"),
+                        'bg_color' => Request::get("slide_bg_color_$i"),
+                        'title' => Request::get("slide_title_$i"),
+                        'subtitle' => Request::get("slide_subtitle_$i"),
+                        'text' => Request::get("slide_text_$i")
+                    ]);
+
+                    if (Request::hasFile("slide_image_$i")) {
+                        $extension = Request::file("slide_image_$i")->getClientOriginalExtension();
+                        $upload_path = public_path('files/' . $page->id);
+                        $file_name = "slide_image_$i." . $extension;
+                        Request::file("slide_image_$i")->move($upload_path, $file_name);
+
+                        $page_slide->update([
+                            'image' => $file_name
+                        ]);
+                    }
+                } else {
+                    if (count($page->slides) < Request::get('slides_number')) {
+                        $page_slide_last_id = PageSlide::create([
+                            'page_id' => $id,
+                            'priority' => Request::get("slide_priority_$i"),
+                            'bg_color' => Request::get("slide_bg_color_$i"),
+                            'title' => Request::get("slide_title_$i"),
+                            'subtitle' => Request::get("slide_subtitle_$i"),
+                            'text' => Request::get("slide_text_$i")
+                        ])->id;
+
+                        if (Request::hasFile("slide_image_$i")) {
+                            $extension = Request::file("slide_image_$i")->getClientOriginalExtension();
+                            $upload_path = public_path('files/' . $page->id);
+                            $file_name = "slide_image_$i." . $extension;
+                            Request::file("slide_image_$i")->move($upload_path, $file_name);
+
+                            $page_slide = PageSlide::find($page_slide_last_id);
+                            $page_slide->update([
+                                'image' => $file_name
+                            ]);
+                        }
+                    }
+                }
+            }
+        }
 
         if (Request::hasFile('background_image')) {
             $extension = Request::file('background_image')->getClientOriginalExtension();

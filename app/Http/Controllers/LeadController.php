@@ -12,6 +12,7 @@ use DB;
 
 use App\Lead;
 use App\Page;
+use App\PageSlide;
 
 class LeadController extends Controller
 {

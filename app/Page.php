@@ -52,6 +52,8 @@ class Page extends Model
         'case_video_9',
         'case_text_9',
 
+        'slides_number',
+
         'comments_enabled',
 
         'lead_magnet_file',
@@ -70,5 +72,9 @@ class Page extends Model
     public function leads()
     {
         return $this->hasMany('App\Lead');
+    }
+    public function slides()
+    {
+        return $this->hasMany('App\PageSlide');
     }
 }

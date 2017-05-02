@@ -189,7 +189,11 @@
                             </a>
                         </h5>
                     </div>
-                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                    @if ($page->case_enabled)
+                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                    @else
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                    @endif
                         <div class="card-block">
                             <div class="form-group row">
                                 <label for="case_enabled" class="col-xl-3">
@@ -371,48 +375,111 @@
                             </a>
                         </h5>
                     </div>
-                    <div id="slide-collapse" class="collapse" role="tabpanel" aria-labelledby="slides-heading">
+                    @if ($page->slides_number or $page->slided_number > 0)
+                        <div id="slide-collapse" class="collapse show" role="tabpanel" aria-labelledby="slides-heading">
+                    @else
+                        <div id="slide-collapse" class="collapse" role="tabpanel" aria-labelledby="slides-heading">
+                    @endif
                         <div class="card-block">
                             <div class="form-group row">
-                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
-                                    Цвет фона
+                                <label for="slides_number" class="col-xl-3 col-form-label">
+                                    Число слайдов
                                 </label>
                                 <div class="col-xl-9">
-                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+                                    <input type="number" class="form-control" id="slides_number" placeholder="" name="slides_number" value="{{ $page->slides_number or '' }}" min="0">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
-                                    Заголовок
-                                </label>
-                                <div class="col-xl-9">
-                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+                                <div class="offset-xl-3 col-xl-9">
+                                    <button type="submit" class="btn btn-primary" role="button">Сохранить</button>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
-                                    Изображение
-                                </label>
-                                <div class="col-xl-9">
-                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+
+                            <br>
+
+                            @for ($i = 1; $i <= $page->slides_number; $i++)
+                                <input type="hidden" name="slide_id_{{ $i }}" value="{{ $page->slides[$i - 1]->id or ''}}">
+                                <div class="form-group row">
+                                    <label for="slide_priority_{{ $i }}" class="col-xl-3 col-form-label">
+                                        Очередность
+                                    </label>
+                                    <div class="col-xl-9">
+                                        <input type="text" class="form-control" id="slide_priority_{{ $i }}" placeholder="" name="slide_priority_{{ $i }}" value="{{ $page->slides[$i - 1]->priority or ''}}">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
-                                    Подзаголовок
-                                </label>
-                                <div class="col-xl-9">
-                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+                                <div class="form-group row">
+                                    <label for="slide_bg_color_{{ $i }}" class="col-xl-3">
+                                        Цвет фона слайда
+                                    </label>
+                                    <div class="col-xl-9">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                @if ($page->slides[$i - 1]->bg_color == 'white')
+                                                    <input class="form-check-input" type="radio" name="slide_bg_color_{{ $i }}" id="slide_bg_color_{{ $i }}" value="white" checked>
+                                                @else
+                                                    <input class="form-check-input" type="radio" name="slide_bg_color_{{ $i }}" id="slide_bg_color_{{ $i }}" value="white">
+                                                @endif
+                                                Белый
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                @if ($page->slides[$i - 1]->bg_color == 'bg-faded')
+                                                    <input class="form-check-input" type="radio" name="slide_bg_color_{{ $i }}" id="slide_bg_color_{{ $i }}" value="bg-faded" checked>
+                                                @else
+                                                    <input class="form-check-input" type="radio" name="slide_bg_color_{{ $i }}" id="slide_bg_color_{{ $i }}" value="bg-faded">
+                                                @endif
+                                                Серый
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="slide-bg-color" class="col-xl-3 col-form-label">
-                                    Текст
-                                </label>
-                                <div class="col-xl-9">
-                                    <input type="text" class="form-control" id="slide-bg-color" placeholder="" name="slide-bg-color" value="{{ $page->slide_bg_color or '' }}">
+                                <div class="form-group row">
+                                    <label for="slide_title_{{ $i }}" class="col-xl-3 col-form-label">
+                                        Заголовок
+                                    </label>
+                                    <div class="col-xl-9">
+                                        <input type="text" class="form-control" id="slide_title_{{ $i }}" placeholder="" name="slide_title_{{ $i }}" value="{{ $page->slides[$i - 1]->title }}">
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="form-group row">
+                                    <label for="slide_image_{{ $i }}" class="col-xl-3 col-form-label">
+                                        Изображение
+                                    </label>
+                                    <div class="col-xl-6">
+                                        <label class="custom-file">
+                                            <input type="file" id="slide_image_{{ $i }}" class="custom-file-input" name="slide_image_{{ $i }}">
+                                            <span class="custom-file-control"></span>
+                                        </label>
+                                    </div>
+                                    <div class="col-xl-3">
+                                        @if (isset($page->slides[$i - 1]->image))
+                                            <img id="slide_image_{{ $i }}" src="/files/{{ $page->id }}/{{ $page->slides[$i - 1]->image }}" class="img-fluid">
+                                        @else
+                                            <img id="slide_image_1" src="" class="img-fluid">
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="slide_subtitle_{{ $i }}" class="col-xl-3 col-form-label">
+                                        Подзаголовок
+                                    </label>
+                                    <div class="col-xl-9">
+                                        <input type="text" class="form-control" id="slide_subtitle_{{ $i }}" placeholder="" name="slide_subtitle_{{ $i }}" value="{{ $page->slides[$i - 1]->subtitle }}">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="slide_text_{{ $i }}" class="col-xl-3 col-form-label">
+                                        Текст
+                                    </label>
+                                    <div class="col-xl-9">
+                                        <textarea class="form-control textarea" id="slide_text_{{ $i }}" rows="3" name="slide_text_{{ $i }}" placeholder="">{{ $page->slides[$i - 1]->text }}</textarea>
+                                    </div>
+                                </div>
+                                @if ($i != $page->slides_number)
+                                    <br>
+                                @endif
+                            @endfor
                         </div>
                     </div>
                 </div>
