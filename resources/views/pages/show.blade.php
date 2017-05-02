@@ -315,7 +315,7 @@
                     <div class="container pb-5">
                         <div class="row">
                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-                                <h4 class="pt-5 my-0 f weight-700">
+                                <h4 class="pt-5 my-0 font weight-700">
                                     {{ $page->slides[$i - 1]->subtitle }}
                                 </h4>
                                 <div class="pt-4 f">
@@ -329,7 +329,7 @@
         @endif
 
         @if ($page->comments_enabled)
-            <div class="container">
+            <div class="container pt-5">
                 <div class="row">
                     <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 offset-xl-1">
                         <div class="pt-3" id="mc-container"></div>
