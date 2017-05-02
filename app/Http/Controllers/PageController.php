@@ -158,6 +158,8 @@ class PageController extends Controller
             'google' => Request::get('google'),
             'yandex' => Request::get('yandex'),
             'yandex_target_button' => Request::get('yandex_target_button'),
+            'lptracker' => Request::get('lptracker'),
+            'lptracker_phone' => Request::get('lptracker_phone'), 
 
             'mailchimp_api_key' => Request::get('mailchimp_api_key'),
             'mailchimp_list_id' => Request::get('mailchimp_list_id')

@@ -65,6 +65,8 @@ class Page extends Model
         'google',
         'yandex',
         'yandex_target_button',
+        'lptracker',
+        'lptracker_phone',
 
         'mailchimp_api_key',
         'mailchimp_list_id'

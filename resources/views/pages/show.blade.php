@@ -52,6 +52,7 @@
             ga('send', 'pageview');
         </script>
         @php echo html_entity_decode($page->google); @endphp
+        @php echo html_entity_decode($page->lptracker); @endphp
     </head>
     <body>
         <div class="bg-img">
@@ -68,8 +69,15 @@
                             <div class="hidden-md-up">
                                 <br>
                             </div>
-                            @if ($page->phone)
-                                <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
+                            @if ($page->phone or $page->lptracker_phone)
+                                @if ($page->lptracker_phone)
+                                    @php
+                                        echo html_entity_decode($page->lptracker_phone);
+                                        echo "<br>";
+                                    @endphp
+                                @else
+                                    <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
+                                @endif
                             @endif
                             @if ($page->email)
                                 <a href="mailto:{{ $page->email }}" class="text-info a">{{ $page->email }}</a><br>
@@ -149,8 +157,15 @@
                                 <div class="hidden-md-up">
                                     <br>
                                 </div>
-                                @if ($page->phone)
-                                    <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
+                                @if ($page->phone or $page->lptracker_phone)
+                                    @if ($page->lptracker_phone)
+                                        @php
+                                            echo html_entity_decode($page->lptracker_phone);
+                                            echo "<br>";
+                                        @endphp
+                                    @else
+                                        <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
+                                    @endif
                                 @endif
                                 @if ($page->email)
                                     <a href="mailto:{{ $page->email }}" class="text-info a">{{ $page->email }}</a><br>
@@ -359,8 +374,15 @@
                         <div class="hidden-md-up">
                             <br>
                         </div>
-                        @if ($page->phone)
-                            <a href="tel:{{ $page->phone }}" class="a">{{ $page->phone }}</a><br>
+                        @if ($page->phone or $page->lptracker_phone)
+                            @if ($page->lptracker_phone)
+                                @php
+                                    echo html_entity_decode($page->lptracker_phone);
+                                    echo "<br>";
+                                @endphp
+                            @else
+                                <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
+                            @endif
                         @endif
                         @if ($page->email)
                             <a href="mailto:{{ $page->email }}" class="a">{{ $page->email }}</a><br>

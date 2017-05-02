@@ -575,7 +575,22 @@
                      <textarea class="form-control textarea" id="yandex_target_button" rows="3" name="yandex_target_button" placeholder="">{{ $page->yandex_target_button }}</textarea>
                 </div>
             </div>
-
+            <div class="form-group row">
+                <label for="lptracker" class="col-xl-3 col-form-label">
+                    LPTracker
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control textarea" id="lptracker" rows="3" name="lptracker" placeholder="">{{ $page->lptracker }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="lptracker_phone" class="col-xl-3 col-form-label">
+                    LPTracker телефон
+                </label>
+                <div class="col-xl-9">
+                     <textarea class="form-control textarea" id="lptracker_phone" rows="3" name="lptracker_phone" placeholder="">{{ $page->lptracker_phone }}</textarea>
+                </div>
+            </div>
             <br>
             <br>
 
