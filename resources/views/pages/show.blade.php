@@ -90,7 +90,7 @@
                     <div class="row pt-5">
                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 offset-xl-1">
                             <h1 class="text-center my-0 weight-700">
-                                {{ $page->offer }}
+                                @php echo html_entity_decode($page->offer); @endphp
                             </h1>
                         </div>
                     </div>
