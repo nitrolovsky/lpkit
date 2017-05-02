@@ -25,6 +25,8 @@
         @php
             if ($page->slides_number and $page->slides_number > 0) {
                 $slides_enabled = 1;
+            } else {
+                $slides_enabled = 0;
             }
         @endphp
         @if ($page->case_enabled or $page->comments_enabled or $slides_enabled)
