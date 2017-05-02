@@ -300,7 +300,7 @@
                     <div class="container pt-5 pb-5">
                         <div class="row">
                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-                                <h2 class="font text-center weight-700">
+                                <h2 class="font text-center weight-700 my-0">
                                     {{ $page->slides[$i - 1]->title }}
                                 </h2>
                             </div>
