@@ -382,7 +382,7 @@
                                     echo "<br>";
                                 @endphp
                             @else
-                                <a href="tel:{{ $page->phone }}" class="text-info a">{{ $page->phone }}</a><br>
+                                <a href="tel:{{ $page->phone }}" class="a">{{ $page->phone }}</a><br>
                             @endif
                         @endif
                         @if ($page->email)
