@@ -5,7 +5,7 @@
             @foreach ($leads as $lead)
                 <div class="row">
                     <div class="card card-block {{ empty($lead->status) ? 'card-outline-danger' : '' }}">
-                        <div class="row py-1">
+                        <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 {{ $lead->id }}
                                 <br>
