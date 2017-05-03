@@ -1,3 +1,4 @@
+<?php header('X-Frame-Options: *'); ?>
 <!DOCTYPE html>
 <html>
     <head>
