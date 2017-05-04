@@ -149,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    @if (empty($page->case_enabled) and empty($page->comments_enabled))
+                    @if (empty($page->case_enabled) and empty($page->comments_enabled) and !$slides_enabled)
                         <div class="row pt-5 pb-4">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
                                 @php echo html_entity_decode($page->legal_information); @endphp
