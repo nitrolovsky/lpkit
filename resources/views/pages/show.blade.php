@@ -132,12 +132,12 @@
                                     @endif
                                     @if ($page->email_form_enabled)
                                         <div class="form-group">
-                                            <input type="text" class="font black sw btn-circle form-control" id="email" placeholder="Email" name="email">
+                                            <input type="text" class="font black sw btn-circle form-control" id="email" placeholder="Email" name="email" required="required">
                                         </div>
                                     @endif
                                     @if ($page->phone_form_enabled)
                                         <div class="form-group">
-                                            <input type="text" class="font black sw btn-circle form-control" id="phone" placeholder="Телефон" name="phone">
+                                            <input type="text" class="font black sw btn-circle form-control" id="phone" placeholder="Телефон" name="phone" required="required">
                                         </div>
                                     @endif
                                     <div class="form-group">
