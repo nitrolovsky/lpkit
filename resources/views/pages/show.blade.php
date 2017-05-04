@@ -365,7 +365,7 @@
                 </div>
             </div>
         @endif
-        @if ($page->case_enabled or $page->comments_enabled)
+        @if ($page->case_enabled or $page->comments_enabled or $slides_enabled)
             <div class="container py-5 font">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6 col-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
