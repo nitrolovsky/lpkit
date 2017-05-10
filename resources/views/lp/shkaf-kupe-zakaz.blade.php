@@ -167,19 +167,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="container pb-5">
-                <div class="row">
-                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
-                        <h4 class="pt-5 my-0 weight-700 font-pt-sans">
-                            Бесплатный выезд дизайнера-проектировщика по Санкт-Петербургу
-                        </h4>
-                        <div class="pt-4 font-pt-sans f-s-17">
-                            Вы можете посетить производственных цех, на котором будет изготавливаться ваш шкаф по адресу Санкт-Петербург, улица Потапова, дом 2, литера М. Двухэтажное здании мебельной фабрики ФЭМАС.
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
 
