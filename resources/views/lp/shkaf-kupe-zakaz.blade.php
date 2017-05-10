@@ -128,19 +128,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/files/shkaf-kupe-zakaz/1.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/1.jpg" class="img-fluid">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Шкаф-купе в прихожую от 45 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/files/shkaf-kupe-zakaz/2.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/2.jpg" class="img-fluid">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Встроенный шкаф-купе от 35 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/files/shkaf-kupe-zakaz/3.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/3.jpg" class="img-fluid">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Угловой шкаф-купе от 40 000 р.
                         </h5>
@@ -148,19 +148,19 @@
                 </div>
                 <div class="row pt-5">
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/files/shkaf-kupe-zakaz/4.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/4.jpg" class="img-fluid">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Шкаф-купе в гардеробную комнату от 40 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/files/shkaf-kupe-zakaz/5.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/5.jpg" class="img-fluid">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Корпусный шкаф-купе от 35 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/files/shkaf-kupe-zakaz/6.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/6.jpg" class="img-fluid">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Радиусный шкаф-купе от 75 000 р.
                         </h5>
