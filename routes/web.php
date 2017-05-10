@@ -27,6 +27,10 @@ Route::get('/', function () {
             ->with('page', $page);
     }
 
+    if (file_exists("../resources/views/lp/$subdomain.blade.php") == true) {
+        return View("lp.$subdomain");
+    }
+
     if (Auth::id()) {
         return Redirect::to('pages');
     } else {
@@ -42,6 +46,11 @@ Route::get('users/logout', function() {
 });
 Route::get('/home', 'HomeController@index');
 
+Route::get('lp/{url}', function($url) {
+    if (file_exists("../resources/views/lp/$url.blade.php") == true) {
+        return View("lp.$url");
+    }
+});
 Route::get('pages/thanks', 'PageController@thanks');
 Route::post('pages/updateajax', 'PageController@updateajax');
 Route::post('pages/updateajaximage', 'PageController@updateajaximage');
