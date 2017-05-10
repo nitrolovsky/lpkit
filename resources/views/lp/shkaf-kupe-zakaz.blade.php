@@ -124,7 +124,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4">
@@ -146,7 +145,7 @@
                         </h5>
                     </div>
                 </div>
-                <div class="row pt-5">
+                <div class="row pt-5 pb-5">
                     <div class="col-xl-4 col-lg-4">
                         <img src="/lp/files/shkaf-kupe-zakaz/4.jpg" class="img-fluid">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
@@ -163,6 +162,60 @@
                         <img src="/lp/files/shkaf-kupe-zakaz/6.jpg" class="img-fluid">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Радиусный шкаф-купе от 75 000 р.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-faded">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-xl-2 offset-lg-2">
+                        <h2 class="text-center my-0 weight-700 font-pt-sans">
+                            Фасады и двери для шкафа-купе на ваш выбор
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4">
+                        <img src="/lp/files/shkaf-kupe-zakaz/7.jpg" class="img-fluid">
+                        <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
+                            ЛДСП от 60 000 р.
+                        </h5>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <img src="/lp/files/shkaf-kupe-zakaz/8.jpg" class="img-fluid">
+                        <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
+                            МДФ от 68 000 р.
+                        </h5>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <img src="/lp/files/shkaf-kupe-zakaz/9.jpg" class="img-fluid">
+                        <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
+                            Зеркала от 52 000 р.
+                        </h5>
+                    </div>
+                </div>
+                <div class="row pt-5 pb-5">
+                    <div class="col-xl-4 col-lg-4">
+                        <img src="/lp/files/shkaf-kupe-zakaz/10.jpg" class="img-fluid">
+                        <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
+                            Фотопечать от 54 000 р.
+                        </h5>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <img src="/lp/files/shkaf-kupe-zakaz/11.jpg" class="img-fluid">
+                        <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
+                            Пескоструйный рисунок от 54 000 р.
+                        </h5>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <img src="/lp/files/shkaf-kupe-zakaz/12.jpg" class="img-fluid">
+                        <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
+                            Цветное стекло от 85 000 р.
                         </h5>
                     </div>
                 </div>
