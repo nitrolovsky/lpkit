@@ -127,19 +127,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/1.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/1.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Шкаф-купе в прихожую от 45 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/2.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/2.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Встроенный шкаф-купе от 35 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/3.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/3.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Угловой шкаф-купе от 40 000 р.
                         </h5>
@@ -147,19 +147,19 @@
                 </div>
                 <div class="row pt-5 pb-5">
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/4.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/4.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Шкаф-купе в гардеробную комнату от 40 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/5.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/5.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Корпусный шкаф-купе от 35 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/6.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/6.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Радиусный шкаф-купе от 75 000 р.
                         </h5>
@@ -181,19 +181,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/7.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/7.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             ЛДСП от 60 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/8.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/8.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             МДФ от 68 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/9.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/9.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Зеркала от 52 000 р.
                         </h5>
@@ -201,19 +201,19 @@
                 </div>
                 <div class="row pt-5 pb-5">
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/10.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/10.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Фотопечать от 54 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/11.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/11.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Пескоструйный рисунок от 54 000 р.
                         </h5>
                     </div>
                     <div class="col-xl-4 col-lg-4">
-                        <img src="/lp/files/shkaf-kupe-zakaz/12.jpg" class="img-fluid">
+                        <img src="/lp/files/shkaf-kupe-zakaz/12.jpg" class="img-fluid sw">
                         <h5 class="font py-4 my-0 weight-700 font-pt-sans text-center">
                             Цветное стекло от 85 000 р.
                         </h5>
@@ -234,10 +234,10 @@
                         </div>
                     </div>
                     <div class="container-fluid hidden-sm-up px-0">
-                        <img src="/files/12/slide_image_1.jpg" class="img-fluid mx-auto d-block" alt="Бесплатный выезд дизайнера-проектировщика по Санкт-Петербургу">
+                        <img src="/files/12/slide_image_1.jpg" class="img-fluid mx-auto d-block sw" alt="Бесплатный выезд дизайнера-проектировщика по Санкт-Петербургу">
                     </div>
                     <div class="container hidden-xs-down px-0">
-                        <img src="/files/12/slide_image_1.jpg" class="img-fluid mx-auto d-block" alt="Бесплатный выезд дизайнера-проектировщика по Санкт-Петербургу">
+                        <img src="/files/12/slide_image_1.jpg" class="img-fluid mx-auto d-block sw" alt="Бесплатный выезд дизайнера-проектировщика по Санкт-Петербургу">
                     </div>
                     <div class="container pb-5">
                         <div class="row">
