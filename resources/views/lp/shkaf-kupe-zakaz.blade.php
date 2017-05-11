@@ -45,7 +45,7 @@
                     <div class="row pt-4">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 text-xl-left text-lg-left text-md-left text-sm-center text-center">
                             <span class="h1 text-uppercase font">
-                                 ФЭМАС
+                                 FEMAS
                             </span><br>
                             <span class="descriptor">Шкафы-купе на заказ</span>
                         </div>
@@ -124,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid px-5">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4">
                         <img src="/lp/files/shkaf-kupe-zakaz/1.jpg" class="img-fluid sw">
@@ -178,7 +178,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid px-5">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4">
                         <img src="/lp/files/shkaf-kupe-zakaz/7.jpg" class="img-fluid sw">
