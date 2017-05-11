@@ -263,10 +263,10 @@
                         </div>
                     </div>
                     <div class="container-fluid hidden-sm-up px-0">
-                        <img src="/files/12/slide_image_2.jpg" class="img-fluid mx-auto d-block" alt="Установка за 1 день">
+                        <img src="/files/12/slide_image_2.jpg" class="img-fluid mx-auto d-block sw" alt="Установка за 1 день">
                     </div>
                     <div class="container hidden-xs-down px-0">
-                        <img src="/files/12/slide_image_2.jpg" class="img-fluid mx-auto d-block" alt="Установка за 1 день">
+                        <img src="/files/12/slide_image_2.jpg" class="img-fluid mx-auto d-block sw" alt="Установка за 1 день">
                     </div>
                     <div class="container pb-5">
                         <div class="row">
@@ -292,10 +292,10 @@
                         </div>
                     </div>
                     <div class="container-fluid hidden-sm-up px-0">
-                        <img src="/files/12/slide_image_3.jpg" class="img-fluid mx-auto d-block" alt="Рассрочка без первого взноса">
+                        <img src="/files/12/slide_image_3.jpg" class="img-fluid mx-auto d-block sw" alt="Рассрочка без первого взноса">
                     </div>
                     <div class="container hidden-xs-down px-0">
-                        <img src="/files/12/slide_image_3.jpg" class="img-fluid mx-auto d-block" alt="Рассрочка без первого взноса">
+                        <img src="/files/12/slide_image_3.jpg" class="img-fluid mx-auto d-block sw" alt="Рассрочка без первого взноса">
                     </div>
                     <div class="container pb-5">
                         <div class="row">
@@ -321,10 +321,10 @@
                         </div>
                     </div>
                     <div class="container-fluid hidden-sm-up px-0">
-                        <img src="/files/12/slide_image_4.jpg" class="img-fluid mx-auto d-block" alt="Наглядная демонстрация вашего шкафа-купе">
+                        <img src="/files/12/slide_image_4.jpg" class="img-fluid mx-auto d-block sw" alt="Наглядная демонстрация вашего шкафа-купе">
                     </div>
                     <div class="container hidden-xs-down px-0">
-                        <img src="/files/12/slide_image_4.jpg" class="img-fluid mx-auto d-block" alt="Наглядная демонстрация вашего шкафа-купе">
+                        <img src="/files/12/slide_image_4.jpg" class="img-fluid mx-auto d-block sw" alt="Наглядная демонстрация вашего шкафа-купе">
                     </div>
                     <div class="container pb-5">
                         <div class="row">
@@ -351,10 +351,10 @@
                         </div>
                     </div>
                     <div class="container-fluid hidden-sm-up px-0">
-                        <img src="/files/12/slide_image_5.jpg" class="img-fluid mx-auto d-block" alt="Бесплатный ремонт в течении 2 дней">
+                        <img src="/files/12/slide_image_5.jpg" class="img-fluid mx-auto d-block sw" alt="Бесплатный ремонт в течении 2 дней">
                     </div>
                     <div class="container hidden-xs-down px-0">
-                        <img src="/files/12/slide_image_5.jpg" class="img-fluid mx-auto d-block" alt="Бесплатный ремонт в течении 2 дней">
+                        <img src="/files/12/slide_image_5.jpg" class="img-fluid mx-auto d-block sw" alt="Бесплатный ремонт в течении 2 дней">
                     </div>
                     <div class="container pb-5">
                         <div class="row">
@@ -380,10 +380,10 @@
                         </div>
                     </div>
                     <div class="container-fluid hidden-sm-up px-0">
-                        <img src="/files/12/slide_image_6.jpg" class="img-fluid mx-auto d-block" alt="28000 шкафов-купе произвели и установили за 18 лет работы">
+                        <img src="/files/12/slide_image_6.jpg" class="img-fluid mx-auto d-block sw" alt="28000 шкафов-купе произвели и установили за 18 лет работы">
                     </div>
                     <div class="container hidden-xs-down px-0">
-                        <img src="/files/12/slide_image_6.jpg" class="img-fluid mx-auto d-block" alt="28000 шкафов-купе произвели и установили за 18 лет работы">
+                        <img src="/files/12/slide_image_6.jpg" class="img-fluid mx-auto d-block sw" alt="28000 шкафов-купе произвели и установили за 18 лет работы">
                     </div>
                     <div class="container pb-5">
                         <div class="row">
