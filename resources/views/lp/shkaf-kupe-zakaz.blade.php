@@ -103,7 +103,7 @@
                                         </div>
                                                                         <div class="form-group">
                                         <div class="">
-                                            <button type="submit" class="font sw btn-circle btn btn-primary btn-block" role="button"  >УЗНАТЬ СТОИМОСТЬ</button>
+                                            <button type="submit" class="font sw btn-circle btn btn-primary btn-block" role="button"  >Получить расчет цены</button>
                                         </div>
                                     </div>
                                 </form>
